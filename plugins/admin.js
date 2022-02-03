@@ -203,7 +203,6 @@ Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, desc: Lang.DEMOTE_DESC}
 	}}));
 
 Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {
-	if (message.jid.endsWith('@g.us')) {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -887,7 +886,7 @@ Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: La
             await message.client.groupSettingChange(message.jid, GroupSettingChange.messageSend, true);
             await message.client.sendMessage(message.jid, Config.MUTEMSG,MessageType.text);
         }
-        else if (match[1] == '1m') {
+        else if (match[1] === '1m') {
             await message.client.groupSettingChange(message.jid, GroupSettingChange.messageSend, true);
             await message.client.sendMessage(message.jid,Config.MUTEMSG,MessageType.text);
 
