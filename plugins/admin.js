@@ -900,7 +900,7 @@ Asena.addCommand({pattern: 'unmute ?(.*)', fromMe: true, desc: Lang.UNMUTE_DESC}
     }
 }}));
 
-Asena.addCommand({pattern: 'invite ?(.*)', fromMe: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'link ?(.*)', fromMe: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     if (message.jid.endsWith('@g.us')) {
 	var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
