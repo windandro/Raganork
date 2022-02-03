@@ -1,4 +1,3 @@
-/*
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
