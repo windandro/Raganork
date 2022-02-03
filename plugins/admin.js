@@ -202,12 +202,12 @@ Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, desc: Lang.DEMOTE_DESC}
     }
 	}}));
 
-Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
-    if (message.jid.endsWith('@g.us')) {
-	var im = await checkImAdmin(message);
+Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
+    var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
-		
-    if (!match[1]) {
+
+    if (Config.MUTEMSG == 'default') {
+        if (match[1] == '') {
             await message.client.groupSettingChange(message.jid, GroupSettingChange.messageSend, true);
             await message.client.sendMessage(message.jid,Lang.MUTED,MessageType.text);
         }
