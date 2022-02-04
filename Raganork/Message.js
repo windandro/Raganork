@@ -1,8 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 WhatsAsena - Yusuf Usta
 */
 
@@ -20,7 +18,7 @@ class Message extends Base {
         this.id = data.key.id === undefined ? undefined : data.key.id;
         this.jid = data.key.remoteJid;
         this.fromMe = data.key.fromMe;
-        this.message = data.message && data.message.extendedTextMessage === null ? data.message.conversation : data.message.extendedTextMessage.text;
+        this.message = data && data.message && data.message.extendedTextMessage ?  data.message.extendedTextMessage.text : data.message.conversation;
         this.unreadCount = data.unreadCount;
         this.timestamp = typeof(data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
         this.data = data;
