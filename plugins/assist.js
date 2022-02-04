@@ -53,7 +53,7 @@ New.addCommand({pattern: 'assist ?(.*)', fromMe: sourav, dontAddCommandList: tru
                 }
             );
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *WhatsAsena Private* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'●▬▬▬ *WhatsAsena Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
             var CMD_HELP = '';
