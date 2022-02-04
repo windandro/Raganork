@@ -7,7 +7,6 @@ const Lang = Language.getString('_asena');
 let sourav = Config.WORKTYPE == 'public' ? false : true
 
 New.addCommand({pattern: 'assist ?(.*)', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {
-        var img = await image.query.skbuffer(Config.LOGOSK)
         var CMD_HELP = '';
         if (match[1] === '') {
             New.commands.map(
