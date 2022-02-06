@@ -90,9 +90,9 @@ Asena.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_
         await plugin[0].destroy();
         delete require.cache[require.resolve('./' + match[1] + '.js')]
         fs.unlinkSync('./plugins/' + match[1] + '.js');
-        await message.client.sendMessage(message.jid, Lang.DELETED + '\n *Restart to make changes!*', MessageType.text);
-        
+        await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text);
         await new Promise(r => setTimeout(r, 1000));
+        await message.sendMessage(NLang.AFTER_UPDATE);
         
     }
 
