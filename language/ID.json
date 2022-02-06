@@ -13,7 +13,6 @@
         },
         "_plugin": {
             "INSTALL_DESC": "Penginstalan plugin.",
-            "UNOFF": "⚠️ *Perhatian!* \n*Plugin yang Anda instal tidak resmi!*",
             "NEED_URL": "Harap masukkan URL Plugin! Contoh:",
             "INVALID_URL": "```Harap masukkan url yang valid!```",
             "INVALID_PLUGIN": "*❌ Plugin Anda tidak valid!*\n*Kesalahan:*",
@@ -25,7 +24,6 @@
             "NEED_PLUGIN": "```Harap masukkan sebuah Plugin! Contoh: .plugin __test```",
             "NOT_FOUND_PLUGIN": "```Mungkin Anda telah menginstal plugin seperti itu, atau mungkin belum. Tapi itu pasti tidak sekarang.```",
             "DELETED": "*✅ Plugin berhasil dihapus! Anda harus memulai ulang agar perubahan diterapkan.*",
-            "WARN": "Dapatkan plugin hanya dari saluran t.me/remasterplugin."
         },
         "admin": {
             "BAN_DESC": "Ban seseorang dalam grup. Balas pesan atau tandai seseorang untuk menggunakan perintah.",
