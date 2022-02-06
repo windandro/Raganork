@@ -6,7 +6,7 @@ const Language = require('../language');
 const Lang = Language.getString('_asena');
 let sourav = Config.WORKTYPE == 'public' ? false : true
 
-New.addCommand({pattern: 'assist ?(.*)', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {
+New.addCommand({pattern: 'asena ?(.*)', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             New.commands.map(
