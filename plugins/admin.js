@@ -905,13 +905,13 @@ Asena.addCommand({pattern: 'link ?(.*)', fromMe: true, desc: Lang.INVITE_DESC}, 
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }}));
 
-Asena.addCommand({pattern: 'revoke', fromMe: true, desc: "Revokes/resets group's invite link"}, (async (message, match) => {    
+Asena.addCommand({pattern: 'revoke ?(.*)', fromMe: true, desc: Lang.REVOKE_DESC}, (async (message, match) => {    
     if (message.jid.endsWith('@g.us')) {
 	var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid, "_Promote bot as an *Admin* to use super commands_", MessageType.text);
+    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     await message.client.revokeInvite(message.jid)
-    await message.client.sendMessage(message.jid, "_*Group link* reset successfully!_", MessageType.text);
-	}}))
+    await message.client.sendMessage(message.jid,Lang.REVOKE, MessageType.text);
+}}));
 
 module.exports = {
     checkImAdmin: checkImAdmin
