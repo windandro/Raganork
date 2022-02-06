@@ -43,7 +43,7 @@
             "UNMUTE_DESC": "Unmute the group chat. Anyone can send a message.",
             "UNMUTED": "*Group opened*",
             "INVITE_DESC": "Provides the group's invitation link.",
-            "INVITE": "*Invite link:*"
+            "INVITE": "*Invitation Link of the Group:*"
         },
         "locate": {
             "L_DESC": "It send your location.",
