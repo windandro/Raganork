@@ -43,7 +43,9 @@
             "UNMUTE_DESC": "Grup sohbetini açar. Herkes mesaj gönderebilir.",
             "UNMUTED": "```Grup sohbeti açıldı!```",
             "INVITE_DESC": "Grubun davet linkini getirir.",
-            "INVITE": "```Grubun Davet Linki:```" 
+            "INVITE": "```Grubun Davet Linki:```",
+            "REVOKE_DESC": "Grubun davet linkini sıfırlar.",
+            "REVOKE": "```Grup davet linki başarıyla sıfırlandı!```"
         },
         "locate": {
             "L_DESC": "Konumunuzu gönderir.",
