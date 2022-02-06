@@ -597,6 +597,30 @@ res += ''
                 await message.reply(`Error : \n${err.message}`, MessageType.text)
             }
         } 
+        else if (match[1] === "kktc" || match[1] === "KKTC" || match[1] === "Kktc" || match[1] === "Kıbrıs" || match[1] === "kıbrıs" || match[1] === "Kibris" || match[1].includes('kibris') ) {
+            try{
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/cyprus").then(async ok  => {
+                    resp = JSON.parse(ok.body);
+                    await message.reply(`🇨🇾 *Kuzey Kıbrıs Türk Cumhuriyeti İçin Sonuçlar:*\n😷 *Toplam Vaka:* ${resp.cases}\n🏥 *Günlük Hasta:* ${resp.todayCases}\n⚰️ *Toplam Ölü:* ${resp.deaths}\n☠️ *Günlük Ölü:* ${resp.todayDeaths}\n💊 *Toplam İyileşen:* ${resp.recovered}\n😷 *Aktif Vaka:* ${resp.active}\n🆘 *Ağır Hasta:* ${resp.critical}\n🧪 *Toplam Test:* ${resp.totalTests}`);
+
+                });
+
+            } catch (err) {
+                await message.reply(`Error : \n${err.message}`, MessageType.text)
+            }
+        } 
+        else if (match[1] === "ch" || match[1] === "CH" || match[1] === "Ch" || match[1] === "İsvicre" || match[1] === "isvicre" || match[1] === "İsviçre" || match[1] === "isviçre" || match[1] === "Switzerland" || match[1].includes('switzerland') ) {
+            try{
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/switzerland").then(async ok  => {
+                    resp = JSON.parse(ok.body);
+                    await message.reply(`🇨🇭 *Datas for Switzerland:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
+
+                });
+
+            } catch (err) {
+                await message.reply(`Error : \n${err.message}`, MessageType.text)
+            }
+        }       
         else if (match[1] === "nl" || match[1] === "Nl" || match[1] === "NL" || match[1].includes('netherland') ) {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Netherlands").then(async ok  => {
