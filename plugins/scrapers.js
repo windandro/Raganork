@@ -432,7 +432,7 @@ res += ''
             }
 
         }
-        else if (match[1] === "tr" || match[1] === "Tr" || match[1] === "TR" || match[1].includes('turkiye') || match[1].includes('türkiye') || match[1].includes('türk') ) {
+        else if (match[1] === "tr" || match[1] === "Tr" || match[1] === "TR" || match[1].includes('Turkiye') || match[1].includes('turkiye') || match[1].includes('Türkiye') || match[1].includes('türkiye') || match[1].includes('türk') ) {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Turkey").then(async ok  => {
                     resp = JSON.parse(ok.body);
