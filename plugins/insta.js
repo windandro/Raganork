@@ -16,10 +16,6 @@ const { errorMessage, infoMessage } = require('../helpers')
 const Lang = Language.getString('instagram')
 
 var v = s.CHANNEL
-var need = "*_Need instagram link!_*";
-var need_acc = "*_Need an instagram username!_*";
-var fail = "*_Download failed! Check your link and try again_*";
-var need_acc_s = "_Need an instagram username or link!_";
 
 let sourav = setting.WORKTYPE == 'public' ? false : true
 
