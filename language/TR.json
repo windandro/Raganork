@@ -448,10 +448,13 @@
             "SUCCESSFULLY_DELETED": "Tüm notlarınız başarılı bir şekilde silindi."
         },
         "instagram": {
-            "NEED_WORD": "*Herhangi Bir Instagram Post Linki Girin!*",
+            "NEED_WORD": "*Lütfen bir Instagram gönderi linki yazın!*",
+            "NEED_WORDS": "*Lütfen bir kullanıcı adı veya gönderi linki yazın!*",
             "USAGE": ".insta <kullanıcıAdı>",
-            "DESC": "İnstagram'dan video veya fotoğraf indirir.",
-            "LOADING": "Kullanıcı profili yükleniyor.. lütfen bekleyiniz.",
+            "DESC": "Instagram'dan video veya fotoğraf indirir.",
+            "DOWN": "```Gönderi İndiriliyor...```",
+            "LOADING": "Kullanıcı profili yükleniyor... Lütfen bekleyiniz.",
+            "STORY": "Hikaye bulunamadı!",
             "USERNAME": "Kullanıcı adı",
             "NAME": "İsim",
             "BIO": "Biyografi",
