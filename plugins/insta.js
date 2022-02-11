@@ -26,7 +26,7 @@ var url = getid.exec(q)
 if (url != null) {
 var res = await raganork.query.getPost(url[0],v )
 if (res === "false") return await msg.client.sendMessage(msg.jid, fail, MessageType.text, {quoted: msg.data});
-else await msg.client.sendMessage(msg.jid, downloading, MessageType.text, {quoted: msg.data});
+else await msg.client.sendMessage(msg.jid, DOWNLOADING_VIDEO, MessageType.text, {quoted: msg.data});
 var buffer = await raganork.query.skbuffer(res.links[0].url)
 if (res.links[0].url.includes('mp4')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.video, { mimetype: Mimetype.mp4, quoted: msg.data});
 if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, quoted: msg.data});
@@ -35,7 +35,7 @@ else if (url == null) {
 var linksplit = q.split('https://')[1]
 var res = await raganork.query.getPost('https://'+linksplit,v )
 if (res === "false") return await msg.client.sendMessage(msg.jid, fail, MessageType.text, {quoted: msg.data});
-else await msg.client.sendMessage(msg.jid, downloading, MessageType.text, {quoted: msg.data});
+else await msg.client.sendMessage(msg.jid, DOWNLOADING_VIDEO, MessageType.text, {quoted: msg.data});
 var buffer = await raganork.query.skbuffer(res.links[0].url)
 if (res.links[0].url.includes('mp4')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.video, { mimetype: Mimetype.mp4, quoted: msg.data});
 if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, quoted: msg.data});
