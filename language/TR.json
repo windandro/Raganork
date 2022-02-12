@@ -449,7 +449,7 @@
         },
         "instagram": {
             "NEED_WORD": "*Lütfen bir Instagram gönderi linki yazın!*",
-            "NEED_WORDS": "*Lütfen bir kullanıcı adı veya gönderi linki yazın!*",
+            "NEED_WORDS": "*Lütfen bir kullanıcı adı veya kullanıcının hikaye linkini yazın!*",
             "USAGE": ".insta <kullanıcıAdı>",
             "DESC": "Instagram'dan video veya fotoğraf indirir.",
             "DOWN": "```Gönderi İndiriliyor...```",
