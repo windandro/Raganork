@@ -38,7 +38,7 @@
             "DEMOTE_DESC": "Herhangi bir adminden yetkisini düşürür.",
             "ALREADY_NOT_ADMIN": "```Zaten admin olmayan birisini nasıl yetkisini alayım?```",
             "DEMOTED": "```, Yetkisi Düşürüldü!```",
-            "MUTE_DESC": "Grup sohbetini kapatır. Yalnızca adminler mesaj gönderebilir.\n⌨️ Örnek: *.mute* & *.mute 5m* vb.",
+            "MUTE_DESC": "Grup sohbetini kapatır. Yalnızca adminler mesaj gönderebilir.\n⌨️ Örnek: .mute & .mute 5m vb.",
             "MUTED": "```Grup sohbeti kapatıldı!```",
             "UNMUTE_DESC": "Grup sohbetini açar. Herkes mesaj gönderebilir.",
             "UNMUTED": "```Grup sohbeti açıldı!```",
@@ -413,6 +413,7 @@
             "ATTP_DESC": "Yazıyı renkli stickera dönüştürür.",
             "NEED_WORD": "*Kelime Girmelisin!*",
             "ANIME_DESC": "Yazıyı anime kızının tuttuğu pankartın içine yazar.",
+            "RANDOMANIME_DESC": "Rastgele anime resmi gönderir.",
             "TRUMP_DESC": "Yazıyı trump’ın tweetine çevirir.",
             "CHANGE_DESC": "Yazıyı change my mind posterine çevirir.",
             "GLOW_DESC": "Yazıyı neon resme dönüştürür."
