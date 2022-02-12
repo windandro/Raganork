@@ -247,9 +247,10 @@ var yt = ytdl(qq[1], {filter: format => format.container === 'mp4' && ['720p', '
         });
     
 }));
-   skl.addCommand({pattern: 'yts ?(.*)', fromMe: sourav, desc: Lang.YT_DESC}, (async (message, match) => { 
+   skl.addCommand({pattern: 'yt ?(.*)', fromMe: sourav, desc: Lang.YT_DESC}, (async (message, match) => { 
+	   
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
-    var reply = await message.client.sendMessage(message.jid,'Searching on youtube...',MessageType.text);
+    var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
     try {
         var search = await yts(match[1]);
     } catch {
