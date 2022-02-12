@@ -66,6 +66,6 @@ for (var i = 0; i < (que.length < res.result.stories.length ? que.length : res.r
 var get = got(que[i], {https: {rejectUnauthorized: false}});
 var stream = get.buffer();
 stream.then(async (video) => {
-await msg.client.sendMessage(msg.jid, video, MessageType.video, { mimetype: Mimetype.mp4, caption: '+res.result.username', quoted: msg.data});
+await msg.client.sendMessage(msg.jid, video, MessageType.video, { mimetype: Mimetype.mp4, caption: res.result.username, quoted: msg.data});
 })};
 }));
