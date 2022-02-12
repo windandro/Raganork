@@ -506,8 +506,8 @@
             "NOT": "*Yüklenemedi* "
         },
         "lyrics": {
-            "LY_DESC": "Şarkı sözlerini bulur.",
-            "NEED": "```Herhangi Bir Şarkı Adı Yazmalısın!```",
+            "LY_DESC": "Şarkı sözlerini bulur",
+            "NEED": "```Herhangi Bir Şarkı Yazmalısın!```",
             "SLY": "Şarkı Sözleri:",
             "AUT": "Şarkı Sahibi:",
             "BUL": "Bulunan Şarkı:",
@@ -516,9 +516,9 @@
         "covid": {
             "COV_DESC": "15'den fazla ülkenin günlük ve genel covid tablosunu gösterir.",
             "NOT": "```Üzgünüm Böyle Bir Ülke Bulamadım! Lütfen Geçerli Olan Ülke Kodlarını Girin!```\n\n```Ülke Kodları:``` *.covid tr || az || de || fr || gr || ch || cn || kktc || id || in || jp || kz || nl || pk || ru || uk || usa*"
-        },
+        },  
         "apk": {
-            "apks": "Bazı uygulamaların Premium versiyonlarının linklerini atar."
+            "APKS": "Bazı uygulamaların Premium versiyonlarının linklerini atar."
         }
     }
 }
