@@ -246,7 +246,7 @@ Asena.addCommand({pattern: 'capcut', fromMe: false, dontAddCommandList: true}, (
       await message.sendMessage('💎 *POWERAMP* 💎\npremium unlocked.\n📌 bit.ly/drkampplayer');
    }));
 
-   Asena.addCommand({pattern: 'jetau', fromMe: false}, (async (message, match) => {
+   Asena.addCommand({pattern: 'jetau', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
       await message.sendMessage('💎 *JetAudio* 💎\npremium unlocked.\n📌 bit.ly/drkjetau');
    }));
 
