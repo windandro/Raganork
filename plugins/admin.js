@@ -6,6 +6,8 @@ you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 */
 
+const New = require('../events');
+
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
 const Asena = require('../events');
 const Config = require('../config');
@@ -201,6 +203,10 @@ Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, desc: Lang.DEMOTE_DESC}
         }
     }
 	}}));
+
+New.addCommand({pattern: 'del ?(.*)', fromMe: true, desc: Lang.DEL_DESC}, (async (multidevice, match) => {
+await multidevice.client.deleteMessage(multidevice.jid, {id: multidevice.reply_message.id, remoteJid: multidevice.reply_message.jid, fromMe: true})
+}));
 
 Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
     if (message.jid.endsWith('@g.us')) {
