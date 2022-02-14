@@ -6,7 +6,7 @@ let a = require('raganork-bot');
 let f = require('fs');
 let i = w.WORKTYPE == 'public' ? false : true;
 e.addCommand({pattern: 'trim ?(.*)', fromMe: i, desc:'Sets sticker pack & author name with given ones.'}, (async (m, t, match) => { 
-if (match[1] === '') return await message.client.sendMessage(message.jid, '```Lütfen bir ses dosyası mesajını etiketleyerek yazın.```', MessageType.text, { quoted: message.data });
+if (match[1] === '') return await message.client.sendMessage(message.jid, '```Lütfen bir ses dosyası mesajını etiketleyerek yazın.```', MessageType.text);
 var q = await m.client.downloadAndSaveMediaMessage({key: {remoteJid: m.reply_message.jid,id: m.reply_message.id},message: m.reply_message.data.quotedMessage});
 var au,p;
 if (t[1].includes(':')) {
