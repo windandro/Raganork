@@ -55,7 +55,7 @@ function webp2mp4File(path) {
     })
 }
 let sk = Config.WORKTYPE == 'public' ? false : true
-    Asena.addCommand({pattern: 'photo$', fromMe: sk, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    Asena.addCommand({pattern: 'imagesticker$', fromMe: sk, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
