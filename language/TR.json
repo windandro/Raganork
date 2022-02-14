@@ -408,8 +408,7 @@
             "TEXT": "*Metin girmelisin! Her ne kadar güçlü bir yapay zeka olsam da düşüncelerini okuyamam!*",
             "URL": "*Resim linki girmelisin!*\n*Örnek:* https://i.hizliresim.com/nrg50b.jpg",
             "BRAINLY_DESC": "Soracağınız soruyu akıllıca cevaplandırır.",
-            "BRAINLY_USAGE": ".brainly <soru>",
-            "NEED_QUERY": "Soru sorun!"
+            "BRAINLY_USAGE": ".brainly <soru>"
         },
         "ttp": {
             "TTP_DESC": "Yazıyı sade resme dönüştürür.",
