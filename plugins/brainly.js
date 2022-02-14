@@ -2,18 +2,16 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
-
-const BRAINLY_DESC = "Finds answer for your query on brainly."
-const BRAINLY_USAGE = ".brainly <Query>"
-const NEED_QUERY = "```Enter the Question!```"
+const Language = require('../language');
+const Lang = Language.getString('deepai');
 
 let sk = Config.WORKTYPE == 'public' ? false : true
 
-Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: sk, desc: BRAINLY_DESC, usage: BRAINLY_USAGE }, async (message, match) => {
+Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: sk, desc: Lang.BRAINLY_DESC, usage: Lang.BRAINLY_USAGE }, async (message, match) => {
 
         const Soal = match[1]
         
-        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_QUERY, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_QUERY, MessageType.text);
 
         await axios
           .get(`https://api.xteam.xyz/brainly?APIKEY=10c4105200edc0f0&soal=${Soal}`)
