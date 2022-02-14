@@ -10,34 +10,34 @@ const got = require('got');
 const Config = require('../config');
 
 const Language = require('../language');
-const Lang = Language.getString('weather');
+const Lang = Language.getString('deepai');
 
 if (Config.WORKTYPE == 'private') {
 
-Asena.addCommand({pattern: 'insult ?(.*)', fromMe: true, desc: Lang.EVINS_DESC}, async (message, match) => {
-	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
+Asena.addCommand({pattern: 'insult ?(.*)', fromMe: true, desc: Lang.INSULT_DESC}, async (message, match) => {
+	if (match[1] === 'xx') return await message.reply(Lang.INSULT_DESC);
 	const url = `https://evilinsult.com/generate_insult.php?lang=en&type=json`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n\n *Insult : 👿🤬 ' + Lang.EVINS +'* ```' + json.insult + '```\n\n', MessageType.text);
+		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '🤬 ' + json.insult, MessageType.text);
 	} catch {
-		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
+		return await message.client.sendMessage(message.jid, Lang.INSULT_NOTFOUND, MessageType.text);
 	}
 });
 }
 
 else if (Config.WORKTYPE == 'public') {
 
-Asena.addCommand({pattern: 'insult ?(.*)', fromMe: false, desc: Lang.EVINS_DESC}, async (message, match) => {
-	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
+Asena.addCommand({pattern: 'insult ?(.*)', fromMe: false, desc: Lang.INSULT_DESC}, async (message, match) => {
+	if (match[1] === 'xx') return await message.reply(Lang.INSULT_DESC);
 	const url = `https://evilinsult.com/generate_insult.php?lang=en&type=json`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n\n *Insult : 👿🤬 ' + Lang.EVINS +'* ```' + json.insult + '```\n\n', MessageType.text);
+		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '🤬 ' + json.insult, MessageType.text);
 	} catch {
-		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
+		return await message.client.sendMessage(message.jid, Lang.INSULT_NOTFOUND, MessageType.text);
 	}
 });
 }
