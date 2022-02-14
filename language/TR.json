@@ -38,6 +38,7 @@
             "DEMOTE_DESC": "Herhangi bir adminden yetkisini düşürür.",
             "ALREADY_NOT_ADMIN": "```Zaten admin olmayan birisini nasıl yetkisini alayım?```",
             "DEMOTED": "```, Yetkisi Düşürüldü!```",
+            "DEL_DESC": "Yanıtlanan mesajı siler.",
             "MUTE_DESC": "Grup sohbetini kapatır. Yalnızca adminler mesaj gönderebilir.\n⌨️ Örnek: .mute & .mute 5m vb.",
             "MUTED": "```Grup sohbeti kapatıldı!```",
             "UNMUTE_DESC": "Grup sohbetini açar. Herkes mesaj gönderebilir.",
