@@ -306,7 +306,12 @@
             "UNSUC": "*Hesaplama Yapılamadı ❌*\n*Hata:* \n",
             "VALİD": "*Lütfen Geçerli Olan Şekilde Kullanın!* \n*.calc 1 + 2*\n*.calc 3 x 5*\n*.calc 10 / 5*\n*.calc 5 - 2*",
             "PING_DESC": "Pinginizi ölçer.",
-            "URL": "Uzun linki kısaltır."
+            "URL": "Uzun linki kısaltır.",
+            "QUOTE_DESC": "Rastgele alıntılar gönderir.",
+            "NEED_QUOTE": "Geçersiz istek!",
+            "QUOTE": "Alıntı:",
+            "AUTHOR": "Yazar:",
+            "NOT_FOUND": "Üzgünüm, maalesef bir alıntı bulamadım."
         },
         "conventer": {
             "MP4TOAUDİO_DESC": "Videoyu ses kaydına çevirir.",
