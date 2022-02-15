@@ -461,6 +461,10 @@
             "SS_DESC": "Verilen linkteki sayfadan ekran görüntüsü alır.",
             "LİNK": "Herhangi bir link girmelisin!"
         },
+        "qrgenerator": {
+            "QR_DESC": "Yazılan yazıyı QR Koda dönüştürür.",
+            "TEXT": "Yazı yazmalısın!"
+        },
         "voicy": {
             "NEED_REPLY": "```Lütfen bir kullanıcının mesajına yanıt verin!```",
             "ONLY_AUDIO":"```Sadece ses dosyaları desteklenir.```",
