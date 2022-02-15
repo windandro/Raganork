@@ -14,7 +14,7 @@ var q = await m.client.downloadAndSaveMediaMessage({key: { remoteJid: m.reply_me
 var k = c.find_key
 var r = await f.query.music(q,k,v)
 if (r.result) {
-let msg =  Lang.TITLE + r.result.title + Lang.ALBUM + r.result.album + Lang.ARTIST + r.result.artist + Lang.LABEL + r.result.label + Lang.RDATE + r.result.release_date + Lang.SLINK + 'https://www.youtube.com/results?search_query='+r.result.title.split(' ').join('+')
+let msg =  Lang.TITLE + r.result.title + '\n' + Lang.ALBUM + r.result.album + '\n' + Lang.ARTIST + r.result.artist '\n' + + Lang.LABEL + r.result.label + '\n' + Lang.RDATE + r.result.release_date + '\n' + Lang.SLINK + 'https://www.youtube.com/results?search_query='+r.result.title.split(' ').join('+')
 return await m.client.sendMessage(m.jid, msg, MessageType.text, {quoted: m.data})}
 if (r.error && r.error.error_code == '900') return await m.client.sendMessage(m.jid, Lang.APIERR, MessageType.text,{quoted: m.data})
 if (!r.result) return await m.client.sendMessage(m.jid, Lang.NO_RESULT, MessageType.text,{quoted: m.data})}
