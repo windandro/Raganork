@@ -197,6 +197,8 @@
             "NOT_FOUND": "*Hiçbir şey bulamadım :(*",
             "SEARCHING": "*🔎 Araştırılıyor...*",
             "WIKI_DESC": "Vikipedi'de arama yapar.",
+            "MOVIE_DESC": "Belirlediğiniz film hakkında araştırmalar yapar.",
+            "MOVIE_NEED": "*Bir film adı yazın!*",
             "IMG_DESC": "Google resimlerden fotoğraf getirir.",
             "IMG": "```{}``` adet ```{}``` fotoğrafı yükleniyor..."
         },
