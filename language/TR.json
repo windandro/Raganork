@@ -203,7 +203,7 @@
             "IMG": "```{}``` adet ```{}``` fotoğrafı yükleniyor..."
         },
         "finder": {
-            "FINDER_DESC": "Yanıt verdiğiniz fotoğraf veya videoyu çıkartma yapın.",
+            "FINDER_DESC": "Ses dosyasını analiz ederek şarkının hangi şarkı olduğunu bulur. (SHAZAM benzeri)",
             "NO_RESULT": "*Hiçbir şey bulamadım :(*",
             "NEED_REPLY": "*Bir ses dosyasına yanıt verin!*",
             "APIERR": "*API anahtarınızın süresi dolmuş! Yeni API anahtarı edinin.*",
