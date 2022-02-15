@@ -245,8 +245,8 @@
             "CURRENCY": "PARA BİRİMİ:",
             "ISP": "İNTERNET SERVİS SAĞLAYICI (İSS):",
             "MOBILE": "MOBİL:",
-            "PROXY": "PROXY:*",
-            "NOTFOUND_IP": "Üzgünüm, IP adresini bulamadım.*"
+            "PROXY": "PROXY:",
+            "NOTFOUND_IP": "*Üzgünüm, IP adresini bulamadım.*"
         },
         "log": {
             "LOG": "Yanıtladığınız mesajı özel numaranıza kaydeder.",
