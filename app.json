@@ -1,0 +1,179 @@
+{
+    "name": "Raganork",
+    "description": "Raganork bot - Extra featured, fully customisable WhatsApp Public/User bot.",
+    "logo": "https://i.hizliresim.com/6Bbj7i.jpg",
+    "keywords": ["WhatsApp", "Userbot", "Raganork", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "https://github.com/byadems/Raganork",
+    "website":   "https://bit.ly/Raganork",
+    "success_url": "https://bit.ly/Raganork",
+    "stack": "container",
+    "env": {
+        "RAGANORK_CODE": {
+            "description": "Raganork code (QR scan cheythappo kittiya code). Type here yours Raganork code.",
+            "required": true
+        },
+       "C_CODE": {
+            "description": "Ülke kodunuz. Türkiye için 90 yazın!.. | Your country code. Use 90 for Turkey!..",
+            "required": true,
+            "value": "90"
+        },
+        "SUDO": {
+            "description": "(Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1))",
+            "required": false
+        },
+        "LANGUAGE": {
+            "description": "Bot language. Azerice => az, English => en, Türkçe => tr, Manglish => mg, Malayalam => ml, Hindi => HI, Indonesia => ID",
+            "required": true,
+            "value": "tr"
+        },
+        "M_REPLY": {
+            "description": "Bahsedildiğinde otomatikman yanıtla. | Auto reply when mentioned.",
+            "required": true,
+            "value":"Neden benden bahsettin?"
+        },
+        "M_REPLY_VAR": {
+            "description": "Mesajları etiketleyerek yanıtlama. | Reply to messages by tagging.",
+            "required": true,
+            "value":"true"
+},
+        "BGM_FILTER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },
+        "ALL_IMG": {
+            "description": "Botunuz için bir resim ayarlayın! | Give an image link for your bot!",
+            "required": true,
+            "value": "https://i.hizliresim.com/6Bbj7i.jpg"
+        },
+        "DIALOGUE": {
+            "description": "",
+            "required": true,
+            "value": "https://www.youtube.com/channel/UCw41-XXCF_h9Cin_ARWANwQ"
+        },
+        "ALL_CAPTION": {
+            "description": "Mesajlarda gösterilecek bir başlık ayarlayın. | Set a header to show in the messages.",
+            "required": true,
+            "value": "*Made by WhatsAsena*"
+        },
+        "VERIFIED": {
+            "description": "Jid given above the verified tick. Use 0 for official WhatsApp",
+            "required": true,
+            "value": "0@s.whatsapp.net"
+        },
+        "HANDLERS": {
+            "description": "Komutlar için önek. | Prefix for commands. (.asena, !asena ,asena)",
+            "required": true,
+            "value": "^[.@#!,]"
+        },
+        "CHATBOT": {
+            "description": "Hesabınızı bir sohbet bot'una dönüştürün! | Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "CALL_BLOCK": {
+            "description": "📞 Sizi arayan kişileri engellemek istiyorsanız "true" olarak değiştirin. | Set true if you need to block people who calls you.",
+            "required": true,
+            "value": "false"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku API Anahtarı. (Hesap ayarlarından bulabilirsiniz) | Heroku API Key. (You can find it in account settings)",
+            "required": true
+        },
+        "BLOCK_CHAT": {
+            "description": "Botun hangi sohbette çalışmayacağını belirleyin. Örn: 905xxxx && 905xxxx-1xxx veya 905xxxx,905xxx... | Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
+            "required": false,
+            "value": ""
+        },
+        "WORK_TYPE": {
+            "description": "WhatsAsena'nın Çalışma Şekli. “Public” olarak ayarlarsanız, herkes bot'u kullanabilir. “private” olarak ayarlarsanız ise bot'unuzu sadece siz kullanabilirsiniz. | WhatsAsena Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "required": true,
+            "value": "public"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku Uygulama İsmi. | Heroku APP Name.",
+            "required": true
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "Fotoğrafların arkaplanını kaldırmaya yarar. Remove.bg isimli siteden "API Key" alın. | Visit https://remove.bg for api key.",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Bot'un çalışıp çalışmadığını anlamaya yarar. Değiştirebilirsiniz. | It helps to understand whether the bot is running or not. You can change it.",
+            "required": false,
+            "value": "BOT ÇALIŞIYOR!"
+        },
+        "BAN_MESSAGE": {
+            "description": "Ban atıldığında gönderilecek mesajı ayarlar. Değiştirebilirsiniz. | Sets the message to be sent when the ban is kicked. You can change it.",
+            "required": false,
+            "value": "_Güle güle!.._"
+        },
+        "SONGD": {
+            "description": "Customizable song uploading message!",
+            "required": false,
+            "value": "_Uploading song.._"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Bot ayrıldığında gönderilecek olan mesajı ayarlar. | Sets the message to be sent when the bot leaves.",
+            "required": false,
+            "value": "_I'm leaving, Bye!_"
+        },
+        "SONGD": {
+            "description": "Customizable song downloading message!",
+            "required": true,
+            "value": "_Searching song.._"
+        },
+        "ALL_NUMBER": {
+            "description": "Bot'u kullanacağınız numarayı buraya yazın. | Write the number you will use the bot here.",
+            "required": false,
+            "value": "wa.me/90"
+        },
+        "V_HEADER": {
+            "description": "Shows on top of verified tick. Type any words here.",
+            "required": true,
+            "value": "Onaylı."
+        },
+        "NO_ONLINE": {
+            "description": "Çevrimiçi görünmek istemiyorsanız "true" yazın. Type true if you don't want to appear online.",
+            "required": false,
+            "value": "true"
+        },
+        "IG": {
+            "description": "Instagram sayfanızın linki. (İsteğe bağlı)| Your instagram link. (Optional)",
+            "required": false,
+            "value": "https://instagram.com/username"
+        },
+        "OWNER_NAME": {
+            "description": "Owner name used in many commands! Type your name here.",
+            "required": false,
+            "value": "𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 𝗵𝗲𝗿𝗲"
+        },
+        "TAG_HEADER": {
+            "description": "Owner name used in many commands! Type your name here.",
+            "required": false,
+            "value": "*Hear me friends!*"
+        },   
+        "TAG_REPLY": {
+            "description": "Konuşulduğunda sesli yanıt alabilmek için numaranızın jid değerini girin. Örn: 90xxxxxxxxxx@s.whatsapp.net | Enter jid of your number so that you get a audio reply when metioned. Ex: 90xxxxxxxxxx@s.whatsapp.net - for Turkey",
+            "required": false,    
+            "value": "905300000000@s.whatsapp.net"
+        },
+        "ANTI_FAKE": {
+            "description": "Fake number auto remover (Except Indian numbers)! Give true for activating!",
+            "required": false,
+            "value": "true"
+        },
+        "BOT_NAME": {
+            "description": "Bot'unuzun adı. | Your bot's name.",
+            "required": false,
+            "value": "𝓑𝓞𝓣"
+             
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
