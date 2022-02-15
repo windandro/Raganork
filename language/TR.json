@@ -231,6 +231,23 @@
             "JİD": "*Kişi JID:* ",
             "ST": "*Kişi Durumu:* "
         },
+        "ip": {
+            "IPSTATUS_DESC": "Sorguladığınız IP adresinin detaylı verilerini çıkarır.",
+            "NEED_IP": "*IP Adresi yazın!*",
+            "IP": "IP:",
+            "STATUS": "DURUM:",
+            "CONTINENT": "KITA:",
+            "COUNTRY": "ÜLKE:",
+            "COUNTRY_CODE": "ÜLKE KODU:",
+            "REGION_NAME": "BÖLGE ADI:",
+            "CITY": "ŞEHİR:",
+            "ZIP": "POSTA KODU:",
+            "CURRENCY": "PARA BİRİMİ:",
+            "ISP": "İNTERNET SERVİS SAĞLAYICI (İSS):",
+            "MOBILE": "MOBİL:",
+            "PROXY": "PROXY:*",
+            "NOTFOUND_IP": "Üzgünüm, IP adresini bulamadım.*"
+        },
         "log": {
             "LOG": "Yanıtladığınız mesajı özel numaranıza kaydeder.",
             "REPLY": "*Lütfen Herhangi Bir Mesajı Yanıtlayın!*",
