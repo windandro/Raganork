@@ -2,16 +2,17 @@ const Asena = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
 const Config = require('../config');
-
+const Language = require('../language')
+const Lang = Language.getString('scrapers')
 
 if (Config.WORKTYPE == 'private') {
 	
-Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: true, desc: "Shows movie info." }, (async (message, match) => {
-	if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
+Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: true, desc: Lang.MOVIE_DESC}, (async (message, match) => {
+	if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.MOVIE_NEED, MessageType.text, { quoted: message.data });
 	let url = `http://www.omdbapi.com/?apikey=742b2d09&t=${match[1]}&plot=full`
 	const response = await got(url);
 	const json = JSON.parse(response.body);
-	if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found.*', MessageType.text, { quoted: message.data });
+	if (json.Response != 'True') return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text, { quoted: message.data });
 	let msg = '```';
 	msg += 'Title      : ' + json.Title + '\n\n';
 	msg += 'Year       : ' + json.Year + '\n\n';
@@ -36,12 +37,12 @@ Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: true, desc: "Shows movie info
 
 else if (Config.WORKTYPE == 'public') {
 	
-Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: false, desc: "Shows movie info." }, (async (message, match) => {
-	if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
+Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: false, desc: Lang.MOVIE_DESC}, (async (message, match) => {
+	if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.MOVIE_NEED, MessageType.text, { quoted: message.data });
 	let url = `http://www.omdbapi.com/?apikey=742b2d09&t=${match[1]}&plot=full`
 	const response = await got(url);
 	const json = JSON.parse(response.body);
-	if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found.*', MessageType.text, { quoted: message.data });
+	if (json.Response != 'True') return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text, { quoted: message.data });
 	let msg = '```';
 	msg += 'Title      : ' + json.Title + '\n\n';
 	msg += 'Year       : ' + json.Year + '\n\n';
