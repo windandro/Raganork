@@ -202,6 +202,18 @@
             "IMG_DESC": "Google resimlerden fotoğraf getirir.",
             "IMG": "```{}``` adet ```{}``` fotoğrafı yükleniyor..."
         },
+        "finder": {
+            "FINDER_DESC": "Yanıt verdiğiniz fotoğraf veya videoyu çıkartma yapın.",
+            "NO_RESULT": "*Hiçbir şey bulamadım :(*",
+            "NEED_REPLY": "*Bir ses dosyasına yanıt verin!*",
+            "APIERR": "*API anahtarınızın süresi dolmuş! Yeni API anahtarı edinin.*",
+            "TITLE": "*Başlık:* ",
+            "ALBUM": "*Albüm:* ",
+            "ARTIST": "*Sanatçı:* ",
+            "LABEL": "*Etiket:* ",
+            "RDATE": "*Çıkış tarihi:* ",
+            "SLINK": "*Şarkı linki:* "
+        },
         "sticker": {
             "STICKER_DESC": "Yanıt verdiğiniz fotoğraf veya videoyu çıkartma yapın.",
             "NEED_REPLY": "*Bir fotoğraf veya videoya yanıt verin!*",
@@ -214,7 +226,7 @@
         "tagall": {
             "TAGALL_DESC": "Gruptaki herkesi etiketler. Mesaja gömülü etiket atmak için mesajı yanıtlayın ya da kelime girin.",
             "ADMİN": "*Bu Grupta Admin Değilim!*",
-            "SCAN": "Girilen numaranın WhatApp'ta kayıtlı olup olmadığını kontrol eder.",
+            "SCAN": "Girilen numaranın WhatsApp'ta kayıtlı olup olmadığını kontrol eder.",
             "NO": "*Lütfen Herhangi Bir Telefon Numarası Gir!*\n*Örnek:* ```.scan 90xxxx```",
             "SUC": "*Numaralı Kişi WhatApp Kullanıyor! ✅*",
             "UNSUC": "*Numaralı Kişi WhatApp Kullanmıyor! ❌*",
