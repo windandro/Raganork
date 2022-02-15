@@ -328,7 +328,7 @@ var yt = ytdl(qq[1], {filter: format => format.container === 'mp4' && ['720p', '
                 writer.addTag();
 
                 
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'Music.mp3' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'Music' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
             });
     }));
 
