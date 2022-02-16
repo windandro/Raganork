@@ -188,11 +188,11 @@
             "NO_RESULT": "*Hiçbir şey bulamadım :(*",
             "DOWNLOADING_SONG": "```Şarkınız indiriliyor...```",
             "UPLOADING_SONG": "```Şarkınız yükleniyor...```",
-            "VIDEO_DESC": "Youtubedan video indirir.",
+            "VIDEO_DESC": "YouTube'dan video indirir.",
             "NEED_VIDEO": "*Lütfen bir video adresi yazın!*\n*Örnek:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "```Videonuz indiriliyor...```",
             "UPLOADING_VIDEO": "```Videonuz yükleniyor...```",
-            "YT_DESC": "Youtubeda arama yapar.",
+            "YT_DESC": "YouTube'da arama yapar.",
             "NEED_WORDS": "```Lütfen birkaç kelime yazın!```",
             "GETTING_VIDEOS": "```Videolar getiriyorum...```",
             "NOT_FOUND": "*Hiçbir şey bulamadım :(*",
@@ -552,7 +552,7 @@
             "NOT": "*Yüklenemedi* "
         },
         "lyrics": {
-            "LY_DESC": "Şarkı sözlerini bulur",
+            "LY_DESC": "Şarkı sözlerini bulur.",
             "NEED": "```Herhangi Bir Şarkı Yazmalısın!```",
             "SLY": "Şarkı Sözleri:",
             "AUT": "Şarkı Sahibi:",
