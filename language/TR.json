@@ -183,22 +183,37 @@
             "TTS_DESC": "Yazıyı sese çevirir.",
             "TTS_ERROR": "```Hata! Yazdığınız cümlenin konuşma sentezi yapılamadı!```",
             "SONG_DESC": "Yazdığınız şarkıyı yükler.",
+            "ISONG_DESC": "Yazdığınız şarkıyı MP3 formatında yükler. (iOS kullananlar için)",
             "NEED_TEXT_SONG": "*Lütfen bir şarkı yazın!*\n*Örnek:* ```.song flört - rasta baba```",
             "NO_RESULT": "*Hiçbir şey bulamadım :(*",
             "DOWNLOADING_SONG": "```Şarkınız indiriliyor...```",
             "UPLOADING_SONG": "```Şarkınız yükleniyor...```",
-            "VIDEO_DESC": "Youtubedan video indirir.",
+            "VIDEO_DESC": "YouTube'dan video indirir.",
             "NEED_VIDEO": "*Lütfen bir video adresi yazın!*\n*Örnek:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "```Videonuz indiriliyor...```",
             "UPLOADING_VIDEO": "```Videonuz yükleniyor...```",
-            "YT_DESC": "Youtubeda arama yapar.",
+            "YT_DESC": "YouTube'da arama yapar.",
             "NEED_WORDS": "```Lütfen birkaç kelime yazın!```",
             "GETTING_VIDEOS": "```Videolar getiriyorum...```",
             "NOT_FOUND": "*Hiçbir şey bulamadım :(*",
             "SEARCHING": "*🔎 Araştırılıyor...*",
             "WIKI_DESC": "Vikipedi'de arama yapar.",
+            "MOVIE_DESC": "Belirlediğiniz film hakkında araştırmalar yapar.",
+            "MOVIE_NEED": "*Bir film adı yazın!*",
             "IMG_DESC": "Google resimlerden fotoğraf getirir.",
             "IMG": "```{}``` adet ```{}``` fotoğrafı yükleniyor..."
+        },
+        "finder": {
+            "FINDER_DESC": "Ses dosyasını analiz ederek şarkının hangi şarkı olduğunu bulur. (SHAZAM benzeri)",
+            "NO_RESULT": "*Hiçbir şey bulamadım :(*",
+            "NEED_REPLY": "*Bir ses dosyasına yanıt verin!*",
+            "APIERR": "*API anahtarınızın süresi dolmuş! Yeni API anahtarı edinin.*",
+            "TITLE": "*Başlık:* ",
+            "ALBUM": "*Albüm:* ",
+            "ARTIST": "*Sanatçı:* ",
+            "LABEL": "*Etiket:* ",
+            "RDATE": "*Çıkış tarihi:* ",
+            "SLINK": "*Şarkı linki:* "
         },
         "sticker": {
             "STICKER_DESC": "Yanıt verdiğiniz fotoğraf veya videoyu çıkartma yapın.",
@@ -212,7 +227,7 @@
         "tagall": {
             "TAGALL_DESC": "Gruptaki herkesi etiketler. Mesaja gömülü etiket atmak için mesajı yanıtlayın ya da kelime girin.",
             "ADMİN": "*Bu Grupta Admin Değilim!*",
-            "SCAN": "Girilen numaranın WhatApp'ta kayıtlı olup olmadığını kontrol eder.",
+            "SCAN": "Girilen numaranın WhatsApp'ta kayıtlı olup olmadığını kontrol eder.",
             "NO": "*Lütfen Herhangi Bir Telefon Numarası Gir!*\n*Örnek:* ```.scan 90xxxx```",
             "SUC": "*Numaralı Kişi WhatApp Kullanıyor! ✅*",
             "UNSUC": "*Numaralı Kişi WhatApp Kullanmıyor! ❌*",
@@ -230,6 +245,23 @@
             "COD": "*Eşsiz Grup Kodu:* ",
             "JİD": "*Kişi JID:* ",
             "ST": "*Kişi Durumu:* "
+        },
+        "ip": {
+            "IPSTATUS_DESC": "Sorguladığınız IP adresinin detaylı verilerini çıkarır.",
+            "NEED_IP": "*IP Adresi yazın!*",
+            "IP": "IP:",
+            "STATUS": "DURUM:",
+            "CONTINENT": "KITA:",
+            "COUNTRY": "ÜLKE:",
+            "COUNTRY_CODE": "ÜLKE KODU:",
+            "REGION_NAME": "BÖLGE ADI:",
+            "CITY": "ŞEHİR:",
+            "ZIP": "POSTA KODU:",
+            "CURRENCY": "PARA BİRİMİ:",
+            "ISP": "İNTERNET SERVİS SAĞLAYICI (İSS):",
+            "MOBILE": "MOBİL:",
+            "PROXY": "PROXY:",
+            "NOTFOUND_IP": "*Üzgünüm, IP adresini bulamadım.*"
         },
         "log": {
             "LOG": "Yanıtladığınız mesajı özel numaranıza kaydeder.",
@@ -275,7 +307,12 @@
             "UNSUC": "*Hesaplama Yapılamadı ❌*\n*Hata:* \n",
             "VALİD": "*Lütfen Geçerli Olan Şekilde Kullanın!* \n*.calc 1 + 2*\n*.calc 3 x 5*\n*.calc 10 / 5*\n*.calc 5 - 2*",
             "PING_DESC": "Pinginizi ölçer.",
-            "URL": "Uzun linki kısaltır."
+            "URL": "Uzun linki kısaltır.",
+            "QUOTE_DESC": "Rastgele alıntılar gönderir.",
+            "NEED_QUOTE": "Geçersiz istek!",
+            "QUOTE": "Alıntı:",
+            "AUTHOR": "Yazar:",
+            "NOT_FOUND": "Üzgünüm, maalesef bir alıntı bulamadım."
         },
         "conventer": {
             "MP4TOAUDİO_DESC": "Videoyu ses kaydına çevirir.",
@@ -430,6 +467,10 @@
             "SS_DESC": "Verilen linkteki sayfadan ekran görüntüsü alır.",
             "LİNK": "Herhangi bir link girmelisin!"
         },
+        "qrgenerator": {
+            "QR_DESC": "Yazılan yazıyı QR Koda dönüştürür.",
+            "TEXT": "Yazı yazmalısın!"
+        },
         "voicy": {
             "NEED_REPLY": "```Lütfen bir kullanıcının mesajına yanıt verin!```",
             "ONLY_AUDIO":"```Sadece ses dosyaları desteklenir.```",
@@ -511,7 +552,7 @@
             "NOT": "*Yüklenemedi* "
         },
         "lyrics": {
-            "LY_DESC": "Şarkı sözlerini bulur",
+            "LY_DESC": "Şarkı sözlerini bulur.",
             "NEED": "```Herhangi Bir Şarkı Yazmalısın!```",
             "SLY": "Şarkı Sözleri:",
             "AUT": "Şarkı Sahibi:",

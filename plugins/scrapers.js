@@ -249,7 +249,7 @@ var yt = ytdl(qq[1], {filter: format => format.container === 'mp4' && ['720p', '
 }));
    skl.addCommand({pattern: 'yt ?(.*)', fromMe: sourav, desc: Lang.YT_DESC}, (async (message, match) => { 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
-    var reply = await message.client.sendMessage(message.jid,'Searching on youtube...',MessageType.text);
+    var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
     try {
         var search = await yts(match[1]);
     } catch {
@@ -266,7 +266,7 @@ var yt = ytdl(qq[1], {filter: format => format.container === 'mp4' && ['720p', '
     await message.client.sendMessage(message.jid,msg,MessageType.text,{quoted: message.data});
 }));
 
-    skl.addCommand({pattern: 'sing ?(.*)', fromMe: sourav, desc: Lang.SING_DESC}, (async (message, match) => { 
+    skl.addCommand({pattern: 'sing ?(.*)', fromMe: sourav, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SING,MessageType.text);    
         let arama = await yts(match[1]);
@@ -328,7 +328,7 @@ var yt = ytdl(qq[1], {filter: format => format.container === 'mp4' && ['720p', '
                 writer.addTag();
 
                 
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: config.AFN + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'Music' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
             });
     }));
 
