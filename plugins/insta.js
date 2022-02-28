@@ -55,7 +55,7 @@ skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav,dontAddCommandList: true },
     var res = await raganork.query.getStalk(query[1])
     if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.STORY, MessageType.text, {quoted: msg.data})
     var buffer = await raganork.query.skbuffer(res.hd_profile_pic_url_info.url)
-    await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: '_*Name:*_ ' + `${res.fullname}` + '\n _*Bio:*_ ' + `${res.biography}`+ '\n _*Private account:*_ ' + `${res.is_private} ` + '\n _*Followers:*_ ' + `${res.followers}` + '\n _*Following:*_ ' + `${res.following}` + '\n _*Posts:*_ ' + `${res.post_count}` + '\n _*Verified:*_ ' + `${res.is_verified} ` + '\n _*IGTV videos:*_ ' + `${res.total_igtv_videos}`, quoted: msg.data});
+    await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: Lang.NAME + `${res.fullname}` + '\n' + Lang.BIO + `${res.biography}` + '\n' + Lang.ACCOUNT + `${res.is_private} ` + '\n' + Lang.FOLLOWERS + `${res.followers}` + '\n' + Lang.FOLLOWS + `${res.following}` + '\n' + Lang.POSTS + `${res.post_count}` + '\n' + Lang.VERIFIED + `${res.is_verified} `, quoted: msg.data});
     }));
 
 skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
@@ -74,7 +74,7 @@ var type = que[i].includes('mp4') ? MessageType.video : MessageType.image
 var mime = que[i].includes('mp4') ? Mimetype.mp4 : Mimetype.jpg
 var stream = get.buffer();
 stream.then(async (video) => {
-await msg.sendMessage(res.result.username + Lang.USERNAMES + res.result.stories_count + Lang.STORYS);
+await msg.sendMessage(`res.result.username` + Lang.USERNAMES + res.result.stories_count + Lang.STORYS);
 await msg.client.sendMessage(msg.jid, video, type, { mimetype: mime,quoted: msg.data});
 })};
 }));
