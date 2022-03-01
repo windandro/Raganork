@@ -19,7 +19,7 @@ var v = s.CHANNEL
 
 let sourav = setting.WORKTYPE == 'public' ? false : true
 
-skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav, desc: Lang.DESC }, (async (msg, query) => {
 var q = !msg.reply_message.message ? query[1] : msg.reply_message.message
 if (!q)  return await msg.client.sendMessage(msg.jid, Lang.NEED_WORD, MessageType.text, {quoted: msg.data});
 if (q && !q.includes('instagram.com')) return await msg.client.sendMessage(msg.jid, need, MessageType.text, {quoted: msg.data});
@@ -50,15 +50,15 @@ if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.ji
 }
 }));
 
-skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav, Lang.DESCIG }, (async (msg, query) => {
     if (query[1] === '') return await msg.client.sendMessage(msg.jid, Lang.USAGE, MessageType.text, {quoted: msg.data});
     var res = await raganork.query.getStalk(query[1])
     if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.STORY, MessageType.text, {quoted: msg.data})
     var buffer = await raganork.query.skbuffer(res.hd_profile_pic_url_info.url)
-    await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: Lang.NAME + `${res.fullname}` + '\n' + Lang.BIO + `${res.biography}` + '\n' + Lang.ACCOUNT + `${res.is_private} ` + '\n' + Lang.FOLLOWERS + `${res.followers}` + '\n' + Lang.FOLLOWS + `${res.following}` + '\n' + Lang.POSTS + `${res.post_count}` + '\n' + Lang.VERIFIED + `${res.is_verified} `, quoted: msg.data});
+    await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: Lang.NAME + `${res.fullname}` + '\n' + Lang.BIO + `${res.biography}` + '\n' + Lang.ACCOUNT + `${res.is_private} ` + '\n' + Lang.POSTS + `${res.post_count}` + '\n' + Lang.FOLLOWERS + `${res.followers}` + '\n' + Lang.FOLLOWS + `${res.following}` + '\n' + Lang.VERIFIED + `${res.is_verified} `, quoted: msg.data});
     }));
 
-skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav, Lang.DESCSTORY }, (async (msg, query) => {
 if (query[1] === '') return await msg.client.sendMessage(msg.jid, Lang.NEED_WORDS, MessageType.text, {quoted: msg.data});
 var user = query[1];
 var res = await raganork.query.getStory(user,v)
