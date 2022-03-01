@@ -50,7 +50,7 @@ if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.ji
 }
 }));
 
-skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav, Lang.DESCIG }, (async (msg, query) => {
+skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav, desc: Lang.DESCIG }, (async (msg, query) => {
     if (query[1] === '') return await msg.client.sendMessage(msg.jid, Lang.USAGE, MessageType.text, {quoted: msg.data});
     var res = await raganork.query.getStalk(query[1])
     if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.STORY, MessageType.text, {quoted: msg.data})
@@ -58,7 +58,7 @@ skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav, Lang.DESCIG }, (async (msg
     await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: Lang.NAME + `${res.fullname}` + '\n' + Lang.BIO + `${res.biography}` + '\n' + Lang.ACCOUNT + `${res.is_private} ` + '\n' + Lang.POSTS + `${res.post_count}` + '\n' + Lang.FOLLOWERS + `${res.followers}` + '\n' + Lang.FOLLOWS + `${res.following}` + '\n' + Lang.VERIFIED + `${res.is_verified} `, quoted: msg.data});
     }));
 
-skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav, Lang.DESCSTORY }, (async (msg, query) => {
+skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav, desc: Lang.DESCSTORY }, (async (msg, query) => {
 if (query[1] === '') return await msg.client.sendMessage(msg.jid, Lang.NEED_WORDS, MessageType.text, {quoted: msg.data});
 var user = query[1];
 var res = await raganork.query.getStory(user,v)
