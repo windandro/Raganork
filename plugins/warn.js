@@ -4,7 +4,7 @@ let e = require('../events');
 let { MessageType, Mimetype } = require('@adiwajshing/baileys');
 let w = require('../config');
 let v = w.SESSION
-let cnt = w.WARN_COUNT
+let cnt = w.warn_count
 let {query} = require('raganork-bot');
 e.addCommand({pattern: 'warn ?(.*)', fromMe: true, desc:'Warns user. Removes user after maximum number of warns'}, (async (m, mat) => { 
 if (!m.reply_message) return await m.sendMessage('_Reply to any message!_')
@@ -45,7 +45,8 @@ e.addCommand({pattern: 'get warn', fromMe: true, desc:'Get the number of warns o
     if (warns === 0) {
     return await m.client.sendMessage(chat,'```User @'+par.split('@')[0]+ ' is not in the warn list ✅```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
     } else {
-    return await m.client.sendMessage(chat,'```User @'+par.split('@')[0]+' has only ('+parseInt(cnt)-warns+') warnings left ⚠```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
+    var total = parseInt(cnt) - warns
+return await m.client.sendMessage(chat,'```User @'+par.split('@')[0]+' has only ('+total+') warnings left ⚠```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
     }
 }));
     
