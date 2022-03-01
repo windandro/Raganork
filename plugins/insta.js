@@ -65,6 +65,7 @@ var res = await raganork.query.getStory(user,v)
 if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.NOT_FOUND, MessageType.text, {quoted: msg.data})
 if (res.error) return await msg.client.sendMessage(msg.jid, res.error.replace('status','story'), MessageType.text, {quoted: msg.data})
 var url = ''
+await msg.sendMessage(res.result.username + Lang.USERNAMES + res.result.stories_count + Lang.STORYS);
 res.result.stories.map((result) => {
 url += result.url + ','});
 var que = url !== false ? url.split(',') : [];
@@ -74,7 +75,6 @@ var type = que[i].includes('mp4') ? MessageType.video : MessageType.image
 var mime = que[i].includes('mp4') ? Mimetype.mp4 : Mimetype.jpg
 var stream = get.buffer();
 stream.then(async (video) => {
-await msg.sendMessage(res.result.username + Lang.USERNAMES + res.result.stories_count + Lang.STORYS);
 await msg.client.sendMessage(msg.jid, video, type, { mimetype: mime,quoted: msg.data});
 })};
 }));
