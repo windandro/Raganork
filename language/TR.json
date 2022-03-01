@@ -499,6 +499,8 @@
             "NEED_WORDS": "*Lütfen bir kullanıcı adı veya kullanıcının hikaye linkini yazın!*",
             "USAGE": ".insta <kullanıcıAdı>",
             "DESC": "Instagram'dan video veya fotoğraf indirir.",
+            "DESCIG": "Belirlediğiniz Instagram kullanıcısının profil bilgilerini getirir.",
+            "DESCSTORY": "Instagram'dan hikaye indirir.",
             "DOWN": "```Gönderi İndiriliyor...```",
             "LOADING": "Kullanıcı profili yükleniyor... Lütfen bekleyiniz.",
             "STORY": "Hikaye bulunamadı!",
