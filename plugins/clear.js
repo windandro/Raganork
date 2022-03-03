@@ -5,7 +5,7 @@ const Config = require('../config');
 var CLR_DESC = ''
 var CLR_PROC = ''
 var CLR_DONE = '' 
-if (Config.LANG == 'TR') CLR_DESC = 'Sohbetteki tüm mesajları siler.', CLR_PROC = '```bu sohbetteki tüm mesajlar siliniyor...```', CLR_DONE = '*✅️ Bu sohbetteki mesajlar Başarıyla Temizlendi!*'
+if (Config.LANG == 'TR') CLR_DESC = 'Sohbetteki tüm mesajları siler.', CLR_PROC = '```Bu sohbetteki tüm mesajlar siliniyor...```', CLR_DONE = '*✅️ Bu sohbetteki tüm mesajlar başarıyla silindi!*'
 if (Config.LANG == 'AZ') CLR_DESC = 'Söhbətdəki bütün mesajları silir.', CLR_PROC = '```Bu söhbətdəki bütün mesajlar silinir...```', CLR_DONE = '*✅️ Mesajlar bu söhbətdən uğurla silindi!*'
 if (Config.LANG == 'EN') CLR_DESC = 'Clears all the messages from the chat.', CLR_PROC = '```Clearing all the messages from this chat...```', CLR_DONE = '*✅️ Successfully Cleared all the messages from this chat!*'
 if (Config.LANG == 'PT') CLR_DESC = 'Limpa todas as mensagens do chat.', CLR_PROC = '```Limpando todas as mensagens deste bate-papo...```', CLR_DONE = '*✅️ Todas as mensagens deste bate-papo foram apagadas com sucesso!*'
