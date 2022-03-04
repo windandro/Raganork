@@ -503,7 +503,6 @@
             "DESCSTORY": "Instagram'dan hikaye indirir.",
             "DOWN": "```Gönderi İndiriliyor...```",
             "LOADING": "Kullanıcı profili yükleniyor... Lütfen bekleyiniz.",
-            "STORY": "Hikaye bulunamadı!",
             "STORYS": " Hikayesi indiriliyor...",
             "USERNAME": "Kullanıcı adı",
             "USERNAMES": " Kullanıcısının ",
@@ -517,7 +516,9 @@
             "PUBLIC": "Herkese açık",
             "HIDDEN": "Gizli",
             "VERIFIED": "*Doğrulama:* ",
-            "NOT_FOUND": "*Medya Bulunamadı!*"
+            "IG_NOTFOUND": "*Hesap bulunamadı!*",
+            "STORY_NOTFOUND": "Hikaye bulunamadı!",
+            "INSTA_NOTFOUND": "*Medya bulunamadı!*"
         },
         "github": {
             "GİTHUB_DESC": "Verilen kullanıcı adından github bilgilerini toplar.\n⌨️ Örnek: .github phaticusthiccy",
