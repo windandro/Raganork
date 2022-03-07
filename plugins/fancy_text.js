@@ -32,7 +32,8 @@ if (!m.reply_message) return await m.sendMessage(`_Reply to a text message_ \n E
 25. 🆃🅴🆇🆃 🅷🅴🆁🅴
 26. 𝓣𝓮𝔁𝓽 𝓗𝓮𝓻𝓮        
 27. 𝔗𝔢𝔵𝔱 ℌ𝔢𝔯𝔢       
-28. Ｔｅｘｔ Ｈｅｒｅ`)
+28. Ｔｅｘｔ Ｈｅｒｅ
+29. ᴛᴇxᴛ ʜᴇʀᴇ`)
     var r = i.query.Fancy(m.reply_message.text,v)
     var msg;
 if (q[1] == '1') msg = r.res1
@@ -63,4 +64,6 @@ if (q[1] == '25') msg = r.res25
 if (q[1] == '26') msg = r.res26
 if (q[1] == '27') msg = r.res27
 if (q[1] == '28') msg = r.res28
+if (q[1] == '29') msg = r.res29
+if (parseInt(q[1]) > 30) msg = 'Wrong parameter. Use numbers from fancy table below 30'
     await m.client.sendMessage(m.jid,msg,MessageType.text,{quoted: m.data})}));
