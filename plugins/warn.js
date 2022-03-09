@@ -6,12 +6,15 @@ let w = require('../config');
 let v = w.SESSION
 let cnt = w.warn_count
 let {query} = require('raganork-bot');
-e.addCommand({pattern: 'warn ?(.*)', fromMe: true, desc:'Warns user. Removes user after maximum number of warns'}, (async (m, mat) => { 
-if (!m.reply_message) return await m.sendMessage('_Reply to any message!_')
+const Language = require('../language');
+const Lang = Language.getString('admin');
+
+e.addCommand({pattern: 'warn ?(.*)', fromMe: true, desc: Lang.WARN_DESC}, (async (m, mat) => { 
+if (!m.reply_message) return await m.sendMessage(Lang.WARN_NEED)
     var par = m.reply_message.jid
 var me = m.client.user.jid.split('@')[0]
 var chat = m.jid
-if (!chat.endsWith('@g.us')) return await m.sendMessage('_Only works in groups!_')
+if (!chat.endsWith('@g.us')) return await m.sendMessage(Lang.WARNGROUP)
 var warn = await query.setwarn(me,chat,par,cnt,v)
 var reason = mat[1] ? mat[1] : 'Replied message'
 var msg = "```Warning ⚠️```"+ '\n' +
@@ -21,25 +24,27 @@ var msg = "```Warning ⚠️```"+ '\n' +
 if (warn !== 0) {
     return await m.client.sendMessage(chat,msg,MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})
 } else {
-    await m.client.sendMessage(chat,'```@'+par.split('@')[0]+' kullanıcısının uyarı limiti '+cnt+'e ulaştığından dolayı kullanıcı gruptan çıkarıldı!```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})
+    await m.client.sendMessage(chat,'⛔ @'+par.split('@')[0]+' *kullanıcısının uyarılma limiti '+cnt+'/3 ulaştığından dolayı gruptan çıkarıldı!*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})
     await m.client.groupRemove(m.jid, [m.reply_message.data.participant]);
 }
 }));
-e.addCommand({pattern: 'resetwarn', fromMe: true, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
+
+e.addCommand({pattern: 'resetwarn', fromMe: true, desc: Lang.RESETWARN_DESC}, (async (m, mat) => { 
     if (!m.reply_message) return await m.sendMessage('_Reply to any message!_')
         var par = m.reply_message.jid
     var me = m.client.user.jid.split('@')[0]
     var chat = m.jid
-    if (!chat.endsWith('@g.us')) return await m.sendMessage('_Only works in groups!_')
+    if (!chat.endsWith('@g.us')) return await m.sendMessage(Lang.WARNGROUP)
     await query.deletewarn(me,chat,par,v)
     await m.client.sendMessage(chat,'```Successfully reset warn limits ('+cnt+') of @'+par.split('@')[0]+ '```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
 }));
-e.addCommand({pattern: 'getwarn', fromMe: true, desc:'Get the number of warns of specific user'}, (async (m, mat) => { 
+
+e.addCommand({pattern: 'getwarn', fromMe: true, desc: Lang.GETWARN_DESC}, (async (m, mat) => { 
     if (!m.reply_message) return await m.sendMessage('_Reply to any message!_')
         var par = m.reply_message.jid
     var me = m.client.user.jid.split('@')[0]
     var chat = m.jid
-    if (!chat.endsWith('@g.us')) return await m.sendMessage('_Only works in groups!_')
+    if (!chat.endsWith('@g.us')) return await m.sendMessage(Lang.WARNGROUP)
     var war = await query.getwarn(me,chat,par,v)
     var warns = war.length
     if (warns === 0) {
