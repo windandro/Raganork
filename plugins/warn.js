@@ -25,7 +25,7 @@ if (warn !== 0) {
     await m.client.groupRemove(m.jid, [m.reply_message.data.participant]);
 }
 }));
-e.addCommand({pattern: 'reset warn', fromMe: true, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
+e.addCommand({pattern: 'resetwarn', fromMe: true, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
     if (!m.reply_message) return await m.sendMessage('_Reply to any message!_')
         var par = m.reply_message.jid
     var me = m.client.user.jid.split('@')[0]
@@ -34,7 +34,7 @@ e.addCommand({pattern: 'reset warn', fromMe: true, desc:'Resets the warn count o
     await query.deletewarn(me,chat,par,v)
     await m.client.sendMessage(chat,'```Successfully reset warn limits ('+cnt+') of @'+par.split('@')[0]+ '```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
 }));
-e.addCommand({pattern: 'get warn', fromMe: true, desc:'Get the number of warns of specific user'}, (async (m, mat) => { 
+e.addCommand({pattern: 'getwarn', fromMe: true, desc:'Get the number of warns of specific user'}, (async (m, mat) => { 
     if (!m.reply_message) return await m.sendMessage('_Reply to any message!_')
         var par = m.reply_message.jid
     var me = m.client.user.jid.split('@')[0]
