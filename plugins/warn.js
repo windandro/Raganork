@@ -51,7 +51,7 @@ e.addCommand({pattern: 'getwarn', fromMe: true, desc: Lang.GETWARN_DESC}, (async
     return await m.client.sendMessage(chat,'🥳 @'+par.split('@')[0]+ ' *kullanıcısına ait hiçbir uyarıya rastlayamadım.*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
     } else {
     var total = parseInt(cnt) - warns
-return await m.client.sendMessage(chat,'⚠ @'+par.split('@')[0]+' *adlı kullanıcının sadece '+total+' uyarısı kaldı!',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
+return await m.client.sendMessage(chat,'⚠ @'+par.split('@')[0]+' *adlı kullanıcının şu anlık sadece '+total+' uyarısı mevcut!*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
     }
 }));
     
