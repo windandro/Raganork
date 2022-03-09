@@ -21,7 +21,7 @@ var msg = "```Warning ⚠️```"+ '\n' +
 if (warn !== 0) {
     return await m.client.sendMessage(chat,msg,MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})
 } else {
-    await m.client.sendMessage(chat,'```Warn limit('+cnt+') of @'+par.split('@')[0]+'exceeded. Removing participant```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})
+    await m.client.sendMessage(chat,'```@'+par.split('@')[0]+' kullanıcısının uyarı limiti '+cnt+'e ulaştığından dolayı kullanıcı gruptan çıkarıldı!```',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})
     await m.client.groupRemove(m.jid, [m.reply_message.data.participant]);
 }
 }));
