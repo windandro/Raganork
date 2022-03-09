@@ -36,9 +36,9 @@ function secondsToHms(d) {
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (Config.AFKMSG == 'default') {
 
-        if (AFK.isAfk && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+        if (AFK.isAfk && ((!message.jid.endsWith('g.us')) || (message.jid.endsWith('g.us') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
-            if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
+            if (message.jid.endsWith('g.us') && (message.mention !== false && message.mention.length !== 0)) {
                 message.mention.map(async (jid) => {
                     if (message.client.user.jid.split('@')[0] === jid.split('@')[0]) {
                         await message.client.sendMessage(message.jid,Lang.AFK_TEXT + '\n' + 
@@ -46,7 +46,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                         (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + Lang.AGO : ''), MessageType.text, {quoted: message.data});            
                     }
                 })
-            } else if (message.jid.includes('-') && message.reply_message !== false) {
+            } else if (message.jid.endsWith('g.us') && message.reply_message !== false) {
                 if (message.reply_message.jid.split('@')[0] === message.client.user.jid.split('@')[0]) {
                     await message.client.sendMessage(message.jid,Lang.AFK_TEXT + '\n' + 
                         (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
@@ -60,9 +60,9 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         }
     }
     else {
-        if (AFK.isAfk && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+        if (AFK.isAfk && ((!message.jid.endsWith('g.us')) || (message.jid.endsWith('g.us') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
-            if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
+            if (message.jid.endsWith('g.us') && (message.mention !== false && message.mention.length !== 0)) {
                 message.mention.map(async (jid) => {
                     if (message.client.user.jid.split('@')[0] === jid.split('@')[0]) {
                         await message.client.sendMessage(message.jid,Config.AFKMSG + '\n' + 
@@ -70,7 +70,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                         (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + Lang.AGO : ''), MessageType.text, {quoted: message.data});            
                     }
                 })
-            } else if (message.jid.includes('-') && message.reply_message !== false) {
+            } else if (message.jid.endsWith('g.us') && message.reply_message !== false) {
                 if (message.reply_message.jid.split('@')[0] === message.client.user.jid.split('@')[0]) {
                     await message.client.sendMessage(message.jid,Config.AFKMSG + '\n' + 
                         (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
