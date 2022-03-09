@@ -32,6 +32,11 @@
             "GIVE_ME_USER": "*Bana bir kullanıcı ver!*",
             "ADD_DESC": "Gruba kişi ekler.\n⌨️ Örnek: .add 9055xxxxxxxx",
             "ADDED": "Gruba Eklendi!",
+            "WARN_DESC": "Mesajı yanıtlanan kişiyi uyarır. *3 uyarıdan sonra kişiyi gruptan çıkarır.*",
+            "WARN_NEED": "Lütfen bir mesaja yanıtlayın!",
+            "WARNGROUP": "Sadece gruplarda çalışır!",
+            "RESETWARN_DESC": "Kullanıcının tüm uyarılarını siler.*",
+            "GETWARN_DESC": "Kullanıcının kaç kere uyarıldığının bilgisini verir.*",
             "ALREADY_PROMOTED": "```Zaten admin olan birisini nasıl admin yapayım?```",
             "PROMOTED": "```, Admin Yapıldı!```",
             "PROMOTE_DESC": "Herhangi bir kişiyi admin yapar.",
@@ -323,7 +328,7 @@
             "ANİM_STİCK": "Animasyonlu çıkartmaları videoya çevirir.",
             "STİCKER": "```Çıkartma Fotoğrafa Çevriliyor...```",
             "ANİMATE": "```Animasyonlu Çıkartma Videoya Çevriliyor...```",
-            "XMEDİA_DESC": "İçerisinde 30’dan fazla medya aracının bulduğu bir plugin.",
+            "XMEDİA_DESC": "İçerisinde 30’dan fazla medya aracının bulunduğu bir modül.",
             "T_FALSE": "```❌ Yanlış Blend Efekti Girildi!```\n```🔎 Varolan Komutlar:```\n\n*$dodge* - Videoya pembe renk filtresi uygular.\n*$multiply* - Videoya yeşil renk filtresi uygular.\n*$grainmerge* - Videonun kontrast değerlerini arttırır.\n*$and* - Videonun hıza göre siyah yıldırım efekti uygular.\n*$or* - Videonun hızına göre beyaz yıldırım efekti uygular.\n*$burn* - Videoya yeşil kontrast uygular.\n*$difference* - Videoya yeşil kabartma uygulayarak farklılıkları gösterir.\n*$grainextract* - Videoya gri kabartma uygulayarak farklılıkları gösterir.\n*$divide* - Videoya pembe kabartma uygulayarak farklılıkları gösterir.\n*$xor* - Videoya hem yeşil kabartma hemde yıldırım efekti uygular.\n*$hardmix* - Videonun renklerini sarı ve kırmızı tonuna mix eder.\n*$negation* - Videonun dinamiklerini pembeye çevirir.",
             "T_NOT": "```💭 Herhangi Bir Blend Efekti Girmen Gerekiyor!\n```🔎 Varolan Komutlar:```\n\n*$dodge* - Videoya pembe renk filtresi uygular.\n*$multiply* - Videoya yeşil renk filtresi uygular.\n*$grainmerge* - Videonun kontrast değerlerini arttırır.\n*$and* - Videonun hıza göre siyah yıldırım efekti uygular.\n*$or* - Videonun hızına göre beyaz yıldırım efekti uygular.\n*$burn* - Videoya yeşil kontrast uygular.\n*$difference* - Videoya yeşil kabartma uygulayarak farklılıkları gösterir.\n*$grainextract* - Videoya gri kabartma uygulayarak farklılıkları gösterir.\n*$divide* - Videoya pembe kabartma uygulayarak farklılıkları gösterir.\n*$xor* - Videoya hem yeşil kabartma hemde yıldırım efekti uygular.\n*$hardmix* - Videonun renklerini sarı ve kırmızı tonuna mix eder.\n*$negation* - Videonun dinamiklerini pembeye çevirir.",
             "T_DESC": "Videolara seçilen TBlend efektini uygular." 
@@ -480,7 +485,7 @@
         "aiscanner": {
             "NOT_FOUND": "Aradığınız komuta benzer başka bir komut bulamadık..",
             "FOUND": "*Aradığınız komut bulunamadı, benzeyen komutlar:* \n 🔎 ```",
-            "SEARCHING": "🔎 Komut bulunamadı.. Benzer komutlar aranıyor..",
+            "SEARCHING": "🔎 Komut bulunamadı... Benzer komutlar aranıyor..",
             "NEW_UPDATE": "Bot için yeni güncelleme mevcut!"
         },
         "notes": {
@@ -496,7 +501,7 @@
         },
         "instagram": {
             "NEED_WORD": "*Lütfen bir Instagram gönderi linki yazın!*",
-            "NEED_WORDS": "*Lütfen bir kullanıcı adı veya kullanıcının hikaye linkini yazın!*",
+            "NEED_WORDS": "*Lütfen bir kullanıcı adı yazın!*",
             "USAGE": ".insta <kullanıcıAdı>",
             "DESC": "Instagram'dan video veya fotoğraf indirir.",
             "DESCIG": "Belirlediğiniz Instagram kullanıcısının profil bilgilerini getirir.",
