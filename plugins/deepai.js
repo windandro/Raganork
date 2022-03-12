@@ -34,7 +34,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            { mimetype: Mimetype.jpg, caption: 'from pinky'}
+            { mimetype: Mimetype.jpg, caption: Config.AFN}
         )
     }));
     Asena.addCommand({pattern: 'colorai$', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
@@ -243,7 +243,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            { mimetype: Mimetype.jpg, caption: 'from pinky'}
+            { mimetype: Mimetype.jpg, caption: Config.AFN}
         )
     }));
     Asena.addCommand({pattern: 'colorai$', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
