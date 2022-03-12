@@ -462,7 +462,7 @@
             "BRAINLY_DESC": "Soracağınız soruyu akıllıca cevaplandırır.",
             "BRAINLY_USAGE": ".brainly <soru>",
             "INSULT_DESC": "Rastgele İngilizce dilinden oluşan hakaretler eder.",
-            "INSULT_NOTFOUND": "Sunucu hatası!",
+            "INSULT_NOTFOUND": "Sunucu hatası!"
         },
         "ttp": {
             "TTP_DESC": "Yazıyı sade resme dönüştürür.",
