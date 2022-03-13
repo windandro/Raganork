@@ -36,7 +36,7 @@ e.addCommand({pattern: 'resetwarn', fromMe: true, desc: Lang.RESETWARN_DESC}, (a
     var chat = m.jid
     if (!chat.endsWith('@g.us')) return await m.sendMessage(Lang.WARNGROUP)
     await query.deletewarn(me,chat,par,v)
-    await m.client.sendMessage(chat,'✅ @'+par.split('@')[0]+' *adlı kullanıcının toplamda '+cnt+' uyarısı başarıyla silindi.*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
+    await m.client.sendMessage(chat,'✅ @'+par.split('@')[0]+' *adlı kullanıcının tüm uyarıları başarıyla silindi.*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
 }));
 
 e.addCommand({pattern: 'getwarn', fromMe: true, desc: Lang.GETWARN_DESC}, (async (m, mat) => { 
