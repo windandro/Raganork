@@ -11,7 +11,7 @@ const cwebp = require('cwebp-bin');
 const axios = require('axios'); // Resp Checker
 const Config = require('../config'); // GAN STYLE Support
 
-const got = require("got"); // Responses Catcher
+const got = require('got'); // Responses Catcher
 const deepai = require('deepai'); // Localde ise deepmain.js oluşturarak özelleştirilebilir şekilde kullanabilirsiniz. Web Sunucularında Çalışmaz!!
 deepai.setApiKey('8d39bbf7-e8f0-4167-9215-e763766e0d29'); // Quickstart API Key
 
@@ -388,7 +388,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
     Asena.addCommand({pattern: 'nudityai$', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
         if (message.reply_message === false) return await message.sendMessage(Lang.NEED_REPLY);
-        var downloading = await message.client.sendMessage(message.jid,'Finding NSFW.. 🔥',MessageType.text);
+        var downloading = await message.client.sendMessage(message.jid,Lang.NUDITYAI,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
