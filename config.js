@@ -43,7 +43,7 @@ module.exports = {
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
     AUTOSTICKER: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
-    warn_count: process.env.WARN === undefined ? '3' : process.env.WARN,
+    warn_count: process.env.WARN === undefined ? '5' : process.env.WARN,
     def_st_name: process.env.DF_STICKER_NAME === undefined ? 'false' : process.env.DF_STICKER_NAME,
     CODE: process.env.C_CODE === undefined ? '90' : process.env.C_CODE,
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
