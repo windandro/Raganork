@@ -114,7 +114,9 @@
             "STOP_DESC": "Eklediğiniz filtreyi durdurur.\n⌨️ Örnek: .stop ”merhaba”",
             "NEED_FILTER": "*❌ Lütfen bir filtre yazın!*\n*Örnek:*",
             "ALREADY_NO_FILTER": "*❌ Zaten böyle bir filtre yok!*",
-            "DELETED": "*✅ Filtreniz başarılı bir şekilde silindi!*"
+            "DELETED": "*✅ Filtreniz başarılı bir şekilde silindi!*",
+            "ADDWORD_DESC": "Anti kelime filtrelemesi yapar. Belirlenen kelimeler kullanıldığında kişi otomatikman gruptan atılacaktır.",
+            "ADDWORD_FILTERED": " *filtresi başarılı bir şekilde eklendi!*",
         },
         "greetings": {
             "WELCOME_DESC": "Hoş geldin mesajı ayarlar. Eğer mesaj yazmazsanız hoş geldin mesajını getirir.",
