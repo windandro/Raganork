@@ -35,9 +35,10 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-               await message.client.sendMessage(message.jid, msg, MessageType.text, {quoted: message.data })
-               await message.client.groupRemove(message.jid, [message.data.participant]);         
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {quoted: message.data })
+                await message.client.groupRemove(message.jid, [message.data.participant]);  
+		await new Promise(r => setTimeout(r, 1000));
+		await message.client.sendMessage(message.jid,SIL,MessageType.text);
         }
 		});
-	       await message.client.sendMessage(message.jid,SIL,MessageType.text);
 }));
