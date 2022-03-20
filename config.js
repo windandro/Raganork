@@ -37,7 +37,7 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
-    PLK: process.env.OWNER_NAME === undefined ? 'sᴏᴜʀᴀᴠᴋʟ¹¹' : process.env.OWNER_NAME,
+    PLK: process.env.OWNER_NAME === undefined ? 'WindAndro' : process.env.OWNER_NAME,
     SONGD: process.env.SONGD === undefined ? '𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜 𝙨𝙤𝙣𝙜... 🔍' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? '_<Uploading message here>_' : process.env.SONGU,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
