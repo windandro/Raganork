@@ -7,7 +7,7 @@ const fs = require('fs');
 const got = require("got");
 const axios = require('axios');
 const setting = require('../config');
-const raganork = require('raganork-bot');
+const {getPost,getStalk,getStory,skbuffer} = require('raganork-bot');
 const Config = require('../config');
 const s = require('../config');
 
@@ -26,7 +26,7 @@ if (q && !q.includes('instagram.com')) return await msg.client.sendMessage(msg.j
 var getid = /(?:https?:\/\/)?(?:www\.)?(?:instagram\.com(?:\/.+?)?\/(p|reel|tv)\/)([\w-]+)(?:\/)?(\?.*)?$/
 var url = getid.exec(q)
 if (url != null) {
-var res = await raganork.query.getPost(url[0],v )
+var res = await getPost(url[0],v )
 if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.INSTA_NOTFOUND, MessageType.text, {quoted: msg.data});
 else await msg.client.sendMessage(msg.jid, Lang.DOWN, MessageType.text, {quoted: msg.data});
 var url = res.data
@@ -40,10 +40,10 @@ await msg.client.sendMessage(msg.jid, video, type, { mimetype: mime, quoted: msg
 })};}
 else if (url == null) {
 var linksplit = q.split('https://')[1]
-var res = await raganork.query.getPost('https://'+linksplit,v )
+var res = await getPost('https://'+linksplit,v )
 if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.INSTA_NOTFOUND, MessageType.text, {quoted: msg.data});
 else await msg.client.sendMessage(msg.jid, Lang.DOWN, MessageType.text, {quoted: msg.data});
-var buffer = await raganork.query.skbuffer(res.links[0].url)
+var buffer = await skbuffer(res.links[0].url)
 if (res.links[0].url.includes('mp4')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.video, { mimetype: Mimetype.mp4, quoted: msg.data});
 if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, quoted: msg.data});
     
@@ -52,16 +52,16 @@ if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.ji
 
 skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav, desc: Lang.DESCIG }, (async (msg, query) => {
     if (query[1] === '') return await msg.client.sendMessage(msg.jid, Lang.USAGE, MessageType.text, {quoted: msg.data});
-    var res = await raganork.query.getStalk(query[1])
+    var res = await getStalk(query[1])
     if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.IG_NOTFOUND, MessageType.text, {quoted: msg.data})
-    var buffer = await raganork.query.skbuffer(res.hd_profile_pic_url_info.url)
+    var buffer = await skbuffer(res.hd_profile_pic_url_info.url)
     await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: Lang.NAME + `${res.fullname}` + '\n' + Lang.BIO + `${res.biography}` + '\n' + Lang.ACCOUNT + `${res.is_private} ` + '\n' + Lang.POSTS + `${res.post_count}` + '\n' + Lang.FOLLOWERS + `${res.followers}` + '\n' + Lang.FOLLOWS + `${res.following}` + '\n' + Lang.VERIFIED + `${res.is_verified} `, quoted: msg.data});
     }));
 
 skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav, desc: Lang.DESCSTORY }, (async (msg, query) => {
 if (query[1] === '') return await msg.client.sendMessage(msg.jid, Lang.NEED_WORDS, MessageType.text, {quoted: msg.data});
 var user = query[1];
-var res = await raganork.query.getStory(user,v)
+var res = await getStory(user,v)
 if (res === "false") return await msg.client.sendMessage(msg.jid, Lang.STORY_NOTFOUND, MessageType.text, {quoted: msg.data})
 if (res.error) return await msg.client.sendMessage(msg.jid, res.error.replace('status','story'), MessageType.text, {quoted: msg.data})
 var url = ''
