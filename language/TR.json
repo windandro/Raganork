@@ -486,9 +486,9 @@
             "TEXT": "Yazı yazmalısın!"
         },
         "voicy": {
-            "NEED_REPLY": "```Lütfen bir kullanıcının mesajına yanıt verin!```",
+            "NEED_REPLY": "```Lütfen bir kullanıcının sesli mesajına yanıt verin!```",
             "ONLY_AUDIO":"```Sadece ses dosyaları desteklenir.```",
-            "USAGE": "Sesteki cümleleri yazıya çevirir.",
+            "USAGE": "Sesteki konuşmayı yazıya çevirir.",
             "TEXT": "*Hey! Seste bunları duydum!:*\n\n"
         },
         "aiscanner": {
