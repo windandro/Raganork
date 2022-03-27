@@ -5,7 +5,7 @@ let { MessageType, Mimetype } = require('@adiwajshing/baileys');
 let w = require('../config');
 let v = w.SESSION
 let cnt = w.warn_count
-let {query} = require('raganork-bot');
+let {setwarn,getwarn,deletewarn} = require('raganork-bot');
 const Language = require('../language');
 const Lang = Language.getString('admin');
 
@@ -15,7 +15,7 @@ if (!m.reply_message) return await m.sendMessage(Lang.WARN_NEED)
 var me = m.client.user.jid.split('@')[0]
 var chat = m.jid
 if (!chat.endsWith('@g.us')) return await m.sendMessage(Lang.WARNGROUP)
-var warn = await query.setwarn(me,chat,par,cnt,v)
+var warn = await setwarn(me,chat,par,cnt,v)
 var reason = mat[1] ? mat[1] : 'Sebepsiz'
 var msg = "```⚠️UYARI!```"+ '\n' +
 "Kullanıcı: " +'@'+par.split('@')[0] + '\n' +
@@ -35,8 +35,8 @@ e.addCommand({pattern: 'resetwarn', fromMe: true, desc: Lang.RESETWARN_DESC}, (a
     var me = m.client.user.jid.split('@')[0]
     var chat = m.jid
     if (!chat.endsWith('@g.us')) return await m.sendMessage(Lang.WARNGROUP)
-    await query.deletewarn(me,chat,par,v)
-    await m.client.sendMessage(chat,'✅ @'+par.split('@')[0]+' *adlı kullanıcının toplamda '+cnt+' uyarısı başarıyla silindi.*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
+    await deletewarn(me,chat,par,v)
+    await m.client.sendMessage(chat,'✅ @'+par.split('@')[0]+' *adlı kullanıcının tüm uyarıları başarıyla silindi.*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    
 }));
 
 e.addCommand({pattern: 'getwarn', fromMe: true, desc: Lang.GETWARN_DESC}, (async (m, mat) => { 
@@ -45,7 +45,7 @@ e.addCommand({pattern: 'getwarn', fromMe: true, desc: Lang.GETWARN_DESC}, (async
     var me = m.client.user.jid.split('@')[0]
     var chat = m.jid
     if (!chat.endsWith('@g.us')) return await m.sendMessage(Lang.WARNGROUP)
-    var war = await query.getwarn(me,chat,par,v)
+    var war = await getwarn(me,chat,par,v)
     var warns = war.length
     if (warns === 0) {
     return await m.client.sendMessage(chat,'🥳 @'+par.split('@')[0]+ ' *kullanıcısına ait hiçbir uyarıya rastlayamadım.*',MessageType.text,{quoted:m.data,contextInfo: {mentionedJid: [par]}})    

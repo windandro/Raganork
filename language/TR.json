@@ -114,7 +114,9 @@
             "STOP_DESC": "Eklediğiniz filtreyi durdurur.\n⌨️ Örnek: .stop ”merhaba”",
             "NEED_FILTER": "*❌ Lütfen bir filtre yazın!*\n*Örnek:*",
             "ALREADY_NO_FILTER": "*❌ Zaten böyle bir filtre yok!*",
-            "DELETED": "*✅ Filtreniz başarılı bir şekilde silindi!*"
+            "DELETED": "*✅ Filtreniz başarılı bir şekilde silindi!*",
+            "ADDWORD_DESC": "Anti kelime filtrelemesi yapar. Belirlenen kelimeler kullanıldığında kişi otomatikman gruptan atılacaktır.",
+            "ADDWORD_FILTERED": " *filtresi başarılı bir şekilde eklendi!*"
         },
         "greetings": {
             "WELCOME_DESC": "Hoş geldin mesajı ayarlar. Eğer mesaj yazmazsanız hoş geldin mesajını getirir.",
@@ -197,10 +199,8 @@
             "NEED_VIDEO": "*Lütfen bir video adresi yazın!*\n*Örnek:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "```Videonuz indiriliyor...```",
             "UPLOADING_VIDEO": "```Videonuz yükleniyor...```",
-            "YT_DESC": "YouTube'da arama yapar.",
-            "NEED_WORDS": "```Lütfen birkaç kelime yazın!```",
-            "GETTING_VIDEOS": "```Videolar getiriyorum...```",
-            "NOT_FOUND": "*Hiçbir şey bulamadım :(*",
+            "YTS_DESC": "YouTube'dan video/şarkı arar ve seçerek indirmenize olanak sağlar.",
+            "YTV_DESC": "YouTube'dan videoları istediğiniz kalitede seçip indirmenize olanak sağlar.",
             "SEARCHING": "*🔎 Araştırılıyor...*",
             "WIKI_DESC": "Vikipedi'de arama yapar.",
             "MOVIE_DESC": "Belirlediğiniz film hakkında araştırmalar yapar.",
@@ -450,6 +450,15 @@
             "DEEPAI_DESC": "Yapay sinir ağlarını kullanarak en güçlü yapay zeka araçlarını çalıştırır.",
             "TEXT": "*Metin girmelisin! Her ne kadar güçlü bir yapay zeka olsam da düşüncelerini okuyamam!*",
             "URL": "*Resim linki girmelisin!*\n*Örnek:* https://i.hizliresim.com/nrg50b.jpg",
+            "NEED_REPLY": "*Bir fotoğrafa yanıt verin!*",
+            "COLORIZING": "*Renklendiriliyor...* 🎨",
+            "MIXING": "*Birleştiriliyor...* 🧩",
+            "IMPROVED": "*Geliştiriliyor...* 🖌️",
+            "DREAMAI": "*Efekt uygulanıyor...* 🌃",
+            "NEURALTALKAI": "*İnceleniyor...* 🙇🏻",
+            "TOONAI": "*Dönüştürülüyor...* 🌟🏻",
+            "NUDITYAI": "*NSFW oranı belirleniyor...* 🔥",
+            "GANSTYLE": "*Birleştiriliyor...* ♻️",
             "BRAINLY_DESC": "Soracağınız soruyu akıllıca cevaplandırır.",
             "BRAINLY_USAGE": ".brainly <soru>",
             "INSULT_DESC": "Rastgele İngilizce dilinden oluşan hakaretler eder.",
@@ -477,9 +486,9 @@
             "TEXT": "Yazı yazmalısın!"
         },
         "voicy": {
-            "NEED_REPLY": "```Lütfen bir kullanıcının mesajına yanıt verin!```",
+            "NEED_REPLY": "```Lütfen bir kullanıcının sesli mesajına yanıt verin!```",
             "ONLY_AUDIO":"```Sadece ses dosyaları desteklenir.```",
-            "USAGE": "Sesteki cümleleri yazıya çevirir.",
+            "USAGE": "Sesteki konuşmayı yazıya çevirir.",
             "TEXT": "*Hey! Seste bunları duydum!:*\n\n"
         },
         "aiscanner": {
