@@ -323,6 +323,7 @@
             "MP4TOAUDİO_DESC": "Videoyu ses kaydına çevirir.",
             "MP4TOAUDİO_NEEDREPLY": "*Bir Videoya Yanıt Vermelisin!*",
             "MP4TOAUDİO": "```Video Ses Kaydına Çevriliyor...```",
+            "MP4TOAUDİOLONG": "```Medya 2 dakikadan uzun olduğu için dönüşüm işlemi uzun sürebilir veya başarısız olabilir. Lütfen bekleyiniz...```",
             "STİCKER_DESC": "Çıkartmayı fotoğrafa çevirir.",
             "STİCKER_NEEDREPLY": "*Bir Çıkartmaya Yanıt Vermelisin!*",
             "ANİM_STİCK": "Animasyonlu çıkartmaları videoya çevirir.",
