@@ -18,22 +18,18 @@ Asena.addCommand({pattern: 'unvoice', fromMe: sourav, desc: Lang.UV_DESC}, (asyn
             await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});});}));
 
 Asena.addCommand({pattern: 'mp3$', fromMe: sourav, desc: 'Converts video/voice message to audio'}, (async (message, match) => {    
-       var as = message.reply_message.data.quotedMessage.videoMessage
-    var vs = message.reply_message.data.quotedMessage.audioMessage
-     if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text,{quoted: message.data});
-    if (!as && !vs) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text,{quoted: message.data});
-    var downloading;    
-    if (as && as.seconds > 120 || vs && vs.seconds > 120) downloading = await message.client.sendMessage(message.jid,Lang.MP4TOAUDİOLONG,MessageType.text,{quoted: message.data});
-    else downloading = await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO,MessageType.text,{quoted: message.data});
-         var location = await message.client.downloadAndSaveMediaMessage({key: {remoteJid: message.reply_message.jid,id: message.reply_message.id },message: message.reply_message.data.quotedMessage});
+     var rm = message.reply_message
+     if (rm === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text,{quoted: message.data});
+    if (!rm.audio && !rm.video) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text,{quoted: message.data});
+    var location = await message.client.downloadAndSaveMediaMessage({key: {remoteJid: message.reply_message.jid,id: message.reply_message.id },message: message.reply_message.data.quotedMessage});
         ffmpeg(location)
             .save('tomp3.mp3')
             .on('end', async () => {
                 await message.client.sendMessage(message.jid, fs.readFileSync('tomp3.mp3'), MessageType.audio, {quoted:message.data,mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
-    }));
-    Asena.addCommand({pattern: 'setinfo (.*)', fromMe: sourav, desc: 'Changes title, author, image info of audio files!'}, (async (message, match) => {    
+        }));
+
+Asena.addCommand({pattern: 'setinfo (.*)', fromMe: sourav, desc: 'Changes title, author, image info of audio files!'}, (async (message, match) => {    
          if (!match[1].includes(';')) return await message.client.sendMessage(message.jid,'Wrong format! \n .setinfo Title;Artist;Description;Imagelink', MessageType.text);
         if (message.reply_message === false) return await message.client.sendMessage(message.jid, '_Reply to a voice or video!_', MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,'_Please wait!_',MessageType.text);
