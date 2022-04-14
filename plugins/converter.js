@@ -9,8 +9,8 @@ const FormData = require('form-data')
 const Axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('conventer');
-let sk = Config.WORKTYPE == 'public' ? false : true
-    Asena.addCommand({pattern: 'photo$', fromMe: sk, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+let sourav = Config.WORKTYPE == 'public' ? false : true
+    Asena.addCommand({pattern: 'photo$', fromMe: sourav, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
