@@ -21,6 +21,7 @@ Asena.addCommand({pattern: 'mp3$', fromMe: sourav, desc: 'Converts video/voice m
      var rm = message.reply_message
      if (rm === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text,{quoted: message.data});
     if (!rm.audio && !rm.video) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text,{quoted: message.data});
+    downloading = await message.client.sendMessage(message.jid,'_Generating audio.._',MessageType.text,{quoted: message.data});
     var location = await message.client.downloadAndSaveMediaMessage({key: {remoteJid: message.reply_message.jid,id: message.reply_message.id },message: message.reply_message.data.quotedMessage});
         ffmpeg(location)
             .save('tomp3.mp3')
