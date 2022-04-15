@@ -3,7 +3,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 */
-const {getVideo,skbuffer} = require('raganork-bot');
+const get = require('raganork-bot');
 const skl = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
@@ -258,26 +258,32 @@ skl.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, 
             });
     }));
  
-skl.addCommand({pattern: 'video ?(.*)', fromMe: sourav, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
-         var s1 = !message.reply_message.message ? match[1] : message.reply_message.message
-        if (!s1) return await message.sendMessage('Unable to read link. Use .video link');
-        if (!s1.includes('youtu')) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-      
-	    const getID =
-        /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed|shorts\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/
-        var qq = getID.exec(s1)
-        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted : { key: {fromMe: true,participant: "0@s.whatsapp.net",remoteJid: "status@broadcast"},message: {"extendedTextMessage": {"text": config.BOTSK }}}});
-     try { var dl = await getVideo(qq[1],v) } catch {return await message.sendMessage("*Download failed. Restart bot*")}
-var cap = dl.details.title ? dl.details.title : s.AFN
-var th = dl.details.title ? dl.details.thumbnail.url : null
-try { var yt = ytdl(qq[1], {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)}); } catch {return await message.sendMessage("*Download failed. Restart bot*")}
-        yt.pipe(fs.createWriteStream('./' + qq[1] + '.mp4'));
-        yt.on('end', async () => {
-            await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + qq[1] + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4 , caption:cap, thumbnail: await skbuffer(th)});
-        });
+    Asena.addCommand({pattern: 'video ?(.*)', fromMe: sourav, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
-}));
+        var VID = '';
+        try {
+            if (match[1].includes('watch')) {
+                var tsts = match[1].replace('watch?v=', '')
+                var alal = tsts.split('/')[3]
+                VID = alal
+            } else {     
+                VID = match[1].split('/')[3]
+            }
+        } catch {
+            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        }
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
+
+        var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+        yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
+
+        yt.on('end', async () => {
+            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
+        });
+    }));
    skl.addCommand({pattern: 'youtube ?(.*)', fromMe: sourav, desc: Lang.YT_DESC}, (async (message, match) => { 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
