@@ -206,7 +206,7 @@ if (Config.WORKTYPE == 'private') {
                     message.jid,
                     Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  + 
                     Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +  
-                    Lang.PERCENTAGE + ": ```{}```\n\n".format(percentage) +
+                    Lang.PERCENTAGE + "```{}```\n\n".format(percentage) +
                     Lang.DYNO_LEFT + ": ```{}```\n".format(secondsToHms(remaining)),
                     MessageType.text
                );
