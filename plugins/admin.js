@@ -77,10 +77,12 @@ if (match[1] !== '') {
 			await message.client.groupAdd(message.jid, [user + "@s.whatsapp.net"]);
             await message.client.sendMessage(message.jid,'```' + user + ' ' + Lang.ADDED +'```', MessageType.text);
 	}
-else {return await message.client.sendMessage(message.jid,"This number does not exist on WhatsApp!",MessageType.text);}
+	else {
+		return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
+	}
  	} 
         else {
-            return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
+		return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
         }
     }
 	}))

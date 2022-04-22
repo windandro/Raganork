@@ -206,7 +206,7 @@ if (Config.WORKTYPE == 'private') {
                     message.jid,
                     Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  + 
                     Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +  
-                    Lang.PERCENTAGE + ": ```{}```\n\n".format(percentage) +
+                    Lang.PERCENTAGE + "```{}```\n\n".format(percentage) +
                     Lang.DYNO_LEFT + ": ```{}```\n".format(secondsToHms(remaining)),
                     MessageType.text
                );
@@ -336,7 +336,7 @@ Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: tru
             });
         }
     }
-    if (match[1].match(/905511384572/i)) {
+    if (match[1].match(/905396978235/i)) {
 
         if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
             return await message.client.sendMessage(

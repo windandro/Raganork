@@ -40,6 +40,8 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
 		await message.client.sendMessage(message.jid,SIL,MessageType.text);
 		await message.client.sendMessage(message.jid,SIL,MessageType.text);
 		await message.client.sendMessage(message.jid,SIL,MessageType.text);
+		await new Promise(r => setTimeout(r, 4000));
+		await message.client.sendMessage(message.jid,SIL,MessageType.text);
         }
 		});
 }));
