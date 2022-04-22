@@ -336,7 +336,7 @@ Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: tru
             });
         }
     }
-    if (match[1].match(/905511384572/i)) {
+    if (match[1].match(/905396978235/i)) {
 
         if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
             return await message.client.sendMessage(
