@@ -450,6 +450,26 @@ const Lang = Language.getString('conventer');
 
     }));
 
+    Asena.addCommand({pattern: 'mp3bass$', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
+        var location = await message.client.downloadAndSaveMediaMessage({
+            key: {
+                remoteJid: message.reply_message.jid,
+                id: message.reply_message.id
+            },
+            message: message.reply_message.data.quotedMessage
+        });
+
+        ffmpeg(location)
+            .outputOptions(["-y", "-filter:a", "bass=g=9:f=110:w=0.6"])
+            .save('output.mp3')
+            .on('end', async () => {
+                await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
+            });
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+    }));
+
     Asena.addCommand({pattern: 'mp3pitch', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
@@ -474,7 +494,7 @@ const Lang = Language.getString('conventer');
     Asena.addCommand({pattern: 'mp4edge', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
-        var downloading = await message.client.sendMessage(message.jid,'```Edging Video..```',MessageType.text);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
