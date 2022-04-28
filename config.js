@@ -45,7 +45,7 @@ module.exports = {
     def_st_name: process.env.DF_STICKER_NAME === undefined ? 'false' : process.env.DF_STICKER_NAME,
     CODE: process.env.C_CODE === undefined ? '90' : process.env.C_CODE,
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
-    NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
+    NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
     AUTO_ACTION: process.env.AUTO_ACTION === undefined ? 'true' : process.env.AUTO_ACTION,
     CHATBOT: process.env.CHAT_BOT === undefined ? 'false' : process.env.CHAT_BOT,
     BOTSK: process.env.BOT_NAME === undefined ? 'PUBLIC BOT' : process.env.BOT_NAME,
