@@ -19,23 +19,11 @@ const Lang = Language.getString('conventer');
             await message.sendMessage('💻Usage: *.mp4enhance*\nℹ️Desc: 🇬🇧 Enhance video’s quality.\n\n💻Usage: *.interp*\nℹ️Desc: 🇬🇧 Increases the FPS of the video.\n\n💻Usage: *.mp4slowmo*\nℹ️Desc: 🇬🇧 Applies true-slowmo to non-slow motion videos.\n\n💻Usage: *.x4mp4*\nℹ️Desc: 🇬🇧 Reduce video’s quality by 75%.\n\n💻Usage: *.x2mp4*\nℹ️Desc: 🇬🇧 Reduce video’s quality by 50%.\n\n💻Usage: *.gif*\nℹ️Desc: 🇬🇧 Converts video to gif.\n\n💻Usage: *.agif*\nℹ️Desc: 🇬🇧 Converts video to voiced gif.\n\n💻Usage: *.mp4blur*\nℹ️Desc: 🇬🇧 Blurs the background of the video.\n\n💻Usage: *.mp4stab*\nℹ️Desc: 🇬🇧 Decreases the vibration of the video.\n\n💻Usage: *.mp4rainbow*\nℹ️Desc: 🇬🇧 Applies a rainbow effect to video.\n\n💻Usage: *.mp4color*\nℹ️Desc: 🇬🇧 Makes the colors of the video more vivid and beautiful.\n\n💻Usage: *.mp4art*\nℹ️Desc: 🇬🇧 Applies a art effect to the video.\n\n💻Usage: *.mp4negative*\nℹ️Desc: 🇬🇧 Applies a negative color filter to the video.\n\n💻Usage: *.mp4vintage*\nℹ️Desc: 🇬🇧 Applies a nostalgic effect to video.\n\n💻Usage: *.mp4bw*\nℹ️Desc: 🇬🇧 Applies a monochrome effect to video.\n\n💻Usage: *.mp4reverse*\nℹ️Desc: 🇬🇧 Plays the video in reverse.\n\n💻Usage: *.mp4edge*\nℹ️Desc: 🇬🇧 Applies a edge effect to the video.\n\n💻Usage: *.mp4image*\nℹ️Desc: 🇬🇧 Converts photo to 5 sec video.\n\n💻Usage: *.spectrum*\nℹ️Desc: 🇬🇧 Converts the spectrum of sound into video.\n\n💻Usage: *.waves*\nℹ️Desc: 🇬🇧 Converts the wave range of sound to video.\n\n💻Usage: *.frequency*\nℹ️Desc: 🇬🇧 Converts the frequency range of sound to video.\n\n💻Usage: *.avec*\nℹ️Desc: 🇬🇧 Converts the histogram of sound to video.\n\n💻Usage: *.volumeaudio*\nℹ️Desc: 🇬🇧 Converts the decibel value of the sound into video.\n\n💻Usage: *.cqtaudio*\nℹ️Desc: 🇬🇧 Converts the CQT value of audio to video.\n\n💻Usage: *.mp3eq*\nℹ️Desc: 🇬🇧 Adjusts the sound to a crystal clear level.\n\n💻Usage: *.mp3bass* \nℹ️Desc: 🇬🇧 Adds crystal bass without distorting the sound.\n\n💻Usage: *.mp3crusher*\nℹ️Desc: 🇬🇧 Distorts the sound, makes ridiculous.\n\n💻Usage: *.mp3reverse*\nℹ️Desc: 🇬🇧 Plays the sound in reverse.\n\n💻Usage: *.mp3pitch*\nℹ️Desc: 🇬🇧 Makes the sound thinner and faster.\n\n💻Usage *.mp3low*\nℹ️Desc: 🇬🇧 Makes the sound deep and slower.\n\n💻Usage: *.x2mp3*\nℹ️Desc: 🇬🇧 Makes the sound twice as fast.\n\n💻Usage: *.mp3volume*\nℹ️Desc: 🇬🇧 Increase sound level so much.\n\n💻Usage: *.bwimage*\nℹ️Desc: 🇬🇧 Applies a monochrome effect to image.\n\n💻Usage: *.vintageimage*\nℹ️Desc: 🇬🇧 Applies a vinatge effect to photo.\n\n💻Usage: *.edgeimage*\nℹ️Desc: 🇹🇷 Fotoğrafa edge efekti uygular.\n🇬🇧 Applies a edge effect to the photo.\n\n💻Usage: *.enhanceimage*\nℹ️Desc: 🇹🇷 Fotoğrafı daha net hale getirir.\n🇬🇧 Makes the photo clearer.\n\n💻Usage: *.blurimage*\nℹ️Desc: 🇹🇷 Fotoğrafın arka planını bulanıklaştırır.\n🇬🇧 Blurs the background of the photo.\n\n💻Usage: *.grenimage*\nℹ️Desc: 🇹🇷 Fotoğrafa gren efekti uygular.\n🇬🇧 Applies grain effect to the photo.\n\n💻Usage: *.negativeimage*\nℹ️Desc: 🇬🇧 Applies a negative color filter to the photo.\n\n💻Usage: *.rainbowimage*\nℹ️Desc: 🇬🇧 Applies rainbow effect to the photo.\n\n💻Usage: *.colorimage*\nℹ️Desc: 🇬🇧 It makes the colors of the photo more vivid and attractive.\n\n💻Usage: *.artimage*\nℹ️Desc: 🇬🇧 Applies a art effect to the photo.');
         }
     }));
-     
-   Asena.addCommand({pattern: 'bosscmd', fromMe: true, desc: 'set of commands for bot user or sudo'}, (async (message, match) => {    
-       
-        await message.sendMessage('\n ```BOT OWNER COMMANDS ARE 👇``` \n\n    ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\n\n�📃 Command: .install\n�➡ Description: Install external plugins.\n\n�📃 Command: .plugin\n�➡ Description: Shows the plugins you have installed.\n\n�📃 Command: .remove\n�➡ Description: Removes the plugin.\n\n�📃 Command: .ban\n�➡ Description: Ban someone in the group. Reply to message or tag a person to use command.\n\n�📃 Command: .add\n�➡ Description: Adds someone to the group.\n\n�📃 Command: .promote\n�➡ Description: Makes any person an admin.\n\n�📃 Command: .demote\n�➡ Description: Takes the authority of any admin.\n\n�📃 Command: .mute\n�➡ Description: Mute the group chat. Only the admins can send a message.\n\n�📃 Command: .unmute\n�➡ Description: Unmute the group chat. Anyone can send a message.\n\n�📃 Command: .invite\n�➡ Description: Provides the groups invitation link.\n\n�📃 Command: .afk\n�➡ Description: It makes you AFK - Away From Keyboard.\n\n�📃 Command: .del\n�➡ Description: Deletes The Replied Message Send By The Bot [ ✅ Official External Plugin ]\n\n�📃 Command: .justspam\n�➡ Description: spam the sticker you replyed.\n\n�📃 Command: .welcome\n�➡ Description: It sets the welcome message. If you leave it blank it shows the welcome message.\n\n�📃 Command: .goodbye\n�➡ Description: Sets the goodbye message. If you leave blank, it shows the goodbye message\n\n�📃 Command: .phelp\n�➡ Description: Gives information about using the bot from the Help menu.\n\n�📃 Command: .degis\n\n�📃 Command: .restart\n�➡ Description: Restart Bot\n\n�📃 Command: .shutdown\n�➡ Description: Shutdown Bot\n\n�📃 Command: .dyno\n�➡ Description: Check heroku dyno usage\n\n�📃 Command: .setvar\n�➡ Description: Set heroku config var\n\n�📃 Command: .delvar\n�➡ Description: Delete heroku config var\n\n�📃 Command: .getvar\n�➡ Description: Get heroku config var\n\n�📃 Command: .leave\n�➡ Description: It kicks you from the group you are using it in.\n\n�📃 Command: .pp\n�➡ Description: Makes the profile photo what photo you reply.\n\n�📃 Command: .block\n�➡ Description: Block user.\n\n�📃 Command: .unblock\n�➡ Description: Unblock user.\n\n�📃 Command: .jid\n�➡ Description: Giving users JID.\n\n�📃 Command: .scam\n�➡ Description: Creates 5 minutes of fake actions.\n\n�📃 Command: .spam\\n�➡ Description: It spam until you stop it.\n⌨️ Example: .spam test\n\n�📃 Command: .filtre\n�➡ Description: add filtre in chats\neg: .filter "input" "output"\n\n�📃 Command: .tagall\n�➡ Description: Tags everyone in the group.\n\n�📃 Command: .stam\n�➡ Description: sends the replyed messages to all the members in the group \n\n�📃 Command: .update check\n�➡ Description: Checks the update.\n\n�📃 Command: update start\n�➡ Description: It makes updates.\n\n�📃 Command: .botname NAME HERE\n�➡ Description: Changes name of the bot.\n\n�📃 Command: .owner NAME HERE\n�➡ Description: Changes bot owner name.\n\n�📃 Command: .sudo 919074309534,0\n�➡ Description: Sets sudo for the bot. Sudo means you can control the bot from the number given.\n\n�📃 Command: .caption ANY CAPTION\n�➡ Description: Changes the caption for media downloading and others.\n\n�📃 Command: .botlogo <IMAGE LINK>\n�➡ Description: You can change image of the bot. Use .url to get url of the image.\n\n�📃 Command: .private\n�➡ Description: Swithches to private mode.\n\n�📃 Command: .public\n�➡ Description: Switches to public mode.\n\n�📃 Command: .chatbot on/off\n�➡ Description: To turn on AI powered chatbot.\n\n�📃 Command: .bgm on/off\n�➡ Description: To turn Bgm (Audio reply) on/off.\n\n�📃 Command: .sticker on/off\n�➡ Description: To turn sticker reply on/off.\n\n�📃 Command: .dialogue MASS DIALOGUE HERE\n�➡ Description: Changes the text which comes in assist, menu, info and other some commands.\n\n�📃 Command: .therikick on/off\n�➡ Description: Activates anti theri mode (Bad word kick) Only for groups.\n\n�📃 Command: .antilink on/off\n�➡ Description: Similar to theri kick. Kicks from groups when links are used.\n\n�📃 Command: .mforward JID OF CHAT OR GROUP\n�➡ Description: Sends audio message as voice note with verified tick.\n\n�📃 Command: .send JID OF GROUP OR CHAT\n�➡ Description: Sends audio messages as recorded voice note. Useful for pranking others.\n\n�📃 Command: .sforward JID OF CHAT OR GROUP\n�➡ Description: Sends sticker to group or contact with verified tick.');    
-   
-    }));
-     
-     Asena.addCommand({pattern: 'codtts', fromMe: sourav, desc: 'language code to change the voice in .tts & also for .trt translation'}, (async (message, match) => {  
-       
-        await message.sendMessage('\n https://drive.google.com/file/d/1r4l7QcdEiu9wAOgqxTGB6KWBVsg_U1cu/view?usp=drivesdk \n');
-        
-    })); 
     
     Asena.addCommand({pattern: 'x4mp4', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -56,8 +44,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'x2mp4', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -78,8 +66,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4image', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -102,8 +90,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'spectrum', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -123,8 +111,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'waves', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -144,8 +132,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'frequency', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -165,8 +153,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'avec', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -186,8 +174,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'volumeaudio', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -207,8 +195,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'cqtaudio', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -228,8 +216,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp3eq', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -249,8 +237,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp3crusher', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -270,8 +258,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp3reverse', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -291,8 +279,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4vintage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -313,8 +301,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4reverse', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -336,8 +324,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4bw', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -358,8 +346,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'bwimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -379,8 +367,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'vintageimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -400,8 +388,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4enhance', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -422,8 +410,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'blurimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -443,8 +431,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4blur', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -464,8 +452,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp3pitch', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -485,7 +473,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4edge', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,'```Edging Video..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -507,8 +495,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp3low', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -528,8 +516,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'x2mp3', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -570,8 +558,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'enhanceimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -591,8 +579,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp3volume', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => { 
    
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -612,7 +600,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'gif', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('Need Video!');
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -635,7 +623,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'agif', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('Need Video!');
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -657,7 +645,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'grenimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {   
 
-        if (message.reply_message === false) return await message.sendMessage('Need Photo!');
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
         var downloading = await message.client.sendMessage(message.jid,'```Adding Gren..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -704,8 +692,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'rainbowimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -726,8 +714,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4rainbow', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {  
   
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -748,8 +736,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'negativeimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {  
   
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -769,8 +757,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4negative', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -791,8 +779,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4art', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -813,8 +801,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'artimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -834,8 +822,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4stab', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -856,8 +844,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4color', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -878,8 +866,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'colorimage', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -899,7 +887,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4slowmo', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message.video === false) return await message.sendMessage('*Need Video!*');
+        if (message.reply_message.video === false) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,'```Motion Render Interpolating..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -930,8 +918,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'px4mp4', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text)
+        if (!message.reply_message.video) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text)
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -952,8 +940,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'px2mp4', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (!message.reply_message.video) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -974,8 +962,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4image', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message.image) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (!message.reply_message.image) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -998,8 +986,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pspectrum', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (!message.reply_message) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1019,8 +1007,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pwaves', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (!message.reply_message) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1040,8 +1028,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pfrequency', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (!message.reply_message) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -1061,8 +1049,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pavec', fromMe: true, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (!message.reply_message) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1082,8 +1070,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pvolumeaudio', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (!message.reply_message) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1103,8 +1091,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pcqtaudio', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (!message.reply_message) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1124,8 +1112,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp3eq', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1145,8 +1133,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp3crusher', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1166,8 +1154,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp3reverse', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1187,8 +1175,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4vintage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1209,8 +1197,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4reverse', fromMe: true, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1232,8 +1220,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4bw', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1254,8 +1242,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pbwimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1275,8 +1263,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pvintageimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1296,8 +1284,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4enhance', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1318,8 +1306,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pblurimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1339,8 +1327,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4blur', fromMe: true, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1360,8 +1348,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp3pitch', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1381,7 +1369,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4edge', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,'```Edging Video..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -1403,8 +1391,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp3low', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1424,8 +1412,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'px2mp3', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1466,8 +1454,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'penhanceimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1487,8 +1475,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp3volume', fromMe: true, dontAddCommandList: true}, (async (message, match) => { 
    
-        if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1508,8 +1496,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pgif', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('Need Video!');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1531,8 +1519,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pagif', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('Need Video!');
-        var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.CONVERTING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1553,7 +1541,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pgrenimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {   
 
-        if (message.reply_message === false) return await message.sendMessage('Need Photo!');
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
         var downloading = await message.client.sendMessage(message.jid,'```Adding Gren..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -1600,8 +1588,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'prainbowimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1622,8 +1610,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4rainbow', fromMe: true, dontAddCommandList: true}, (async (message, match) => {  
   
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1644,8 +1632,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pnegativeimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {  
   
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1665,8 +1653,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4negative', fromMe: true, dontAddCommandList: true}, (async (message, match) => {   
  
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1687,8 +1675,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4art', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1709,8 +1697,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'partimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1730,8 +1718,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4stab', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1752,8 +1740,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4color', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1774,8 +1762,8 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pcolorimage', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
-        var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_PHOTO);
+        var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -1795,7 +1783,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'pmp4slowmo', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
+        if (!message.reply_message.video) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,'```Motion Render Interpolating..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
