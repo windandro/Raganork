@@ -76,10 +76,9 @@ Asena.addCommand({pattern: 'update start$', fromMe: true,dontAddCommandList: tru
             } catch { console.log('heroku remote ekli'); }
             await git.push('heroku', Config.BRANCH);
 
-            await message.client.sendMessage(
-                message.jid,Lang.UPDATED, MessageType.text);
+            await message.client.sendMessage(message.jid,Lang.UPDATED, MessageType.text);
 
-            await message.sendMessage(Lang.AFTER_UPDATE);
+            await message.client.sendMessage(message.jid,Lang.AFTER_UPDATE, MessageType.text);
             
         
     }
