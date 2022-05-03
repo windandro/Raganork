@@ -906,7 +906,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4slowmo', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message.video === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        if (!message.reply_message.video === false) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
