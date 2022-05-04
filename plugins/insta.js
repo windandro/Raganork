@@ -1,6 +1,6 @@
 /* Credits: souravkl11, raganork-api
 (c) souravkl11 2022 All rights reserved
-*/
+
 const skl = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -78,3 +78,5 @@ stream.then(async (video) => {
 await msg.client.sendMessage(msg.jid, video, type, { mimetype: mime,quoted: msg.data});
 })};
 }));
+
+*/
