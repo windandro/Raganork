@@ -450,7 +450,7 @@ const Lang = Language.getString('conventer');
 
     }));
 
-    Asena.addCommand({pattern: 'mp3bass$', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'mp3bass', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
         if (message.reply_message === false) return await message.sendMessage(Lang.NEED_AUDIO);
         var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
@@ -704,7 +704,7 @@ const Lang = Language.getString('conventer');
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: `Made by WhatsAsena\n_Interpolated to ${match[1]} FPS_`});
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: Config.AFN});
             });
 
     }));
@@ -906,7 +906,7 @@ const Lang = Language.getString('conventer');
 
     Asena.addCommand({pattern: 'mp4slowmo', fromMe: sourav, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (message.reply_message.video === false) return await message.sendMessage(Lang.NEED_VIDEO);
+        if (message.reply_message === false) return await message.sendMessage(Lang.NEED_VIDEO);
         var downloading = await message.client.sendMessage(message.jid,Lang.EDITING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -915,8 +915,7 @@ const Lang = Language.getString('conventer');
             },
             message: message.reply_message.data.quotedMessage
         });
-
-        await message.client.sendMessage(message.jid,Lang.PROCESSING, MessageType.text);
+        await message.sendMessage(Lang.PROCESSING);
 
         ffmpeg(location)
             .videoFilters('minterpolate=fps=120')
