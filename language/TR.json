@@ -16,7 +16,7 @@
             "NEED_URL": "⚠️ Lütfen bir URL giriniz! Örnek:",
             "INVALID_URL": "❗️ ```Lütfen bir geçerli URL giriniz!```",
             "INVALID_PLUGIN": "*❌ Modülünüz hatalı!*\n*Hata:*",
-            "INSTALLED": "*✅ Plugin başarılı bir şekilde yüklendi!*",
+            "INSTALLED": "*✅ Modül başarılı bir şekilde yüklendi!*",
             "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
             "INSTALLED_FROM_REMOTE": "👇🏻 *Dışarıdan yüklediğiniz modüller:*\n",
             "NO_PLUGIN": "⚠️ *Dışarıdan hiç modül yüklememişsiniz!*",
